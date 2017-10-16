@@ -10,5 +10,5 @@ https://caniuse.com/#search=defer
 ＜フォント＞  
 Ricty Diminished  
 https://github.com/edihbrandon/RictyDiminished  　　 
-プログラミング用に作成されたフォント
+プログラミング用に作成されたフォント  
 download zip
