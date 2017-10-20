@@ -6,10 +6,15 @@ https://www.w3.org/TR/html5/
 Can I use  
 https://caniuse.com/#search=defer  
 
-
+### CSS2 公式サイト
+https://www.w3.org/TR/2011/REC-CSS2-20110607/
+「css2 w3c」
 
 ### フォント
 Ricty Diminished  
 https://github.com/edihbrandon/RictyDiminished  
 プログラミング用に作成されたフォント  
 download zip
+
+##### アウトライン
+機械から見たページの構造です。
