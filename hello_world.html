@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf8">
+        <meta name="discription" content="kakisoft">
+        <!-- content：文書の説明。検索エンジンに引っかかる内容。あまりに短いと無視される。60～100文字前後 -->
+        <title>Hello World</title>
+        <link rel="shortcut icon" href="resources/favicon.ico">
+        <!--
+        <style>
+            body{ background-color: skyblue; }
+        </style>
+        -->
+        <link rel="stylesheet" href="resources/mystyle.css">
+    </head>
+    <body>
+<!--
+header：
+footer：
+nav：ナビゲーション（グローバルメニュー、サイドメニュー、パンくずリスト）
+article：独立しているコンテンツ
+aside：メインでない、副次的なコンテンツ（広告とか）
+section：それ以外の情報のかたまり。
+h1 - h6：見出し
+-->
+
+<header>
+    おいしいごはん
+    <nav>
+        - ホーム
+        - このサイトについて
+        - プロフィール
+    </nav>
+</header>
+
+<!--
+p：パラグラフ。段落。
+hr：Horizontial Rule。水平線。
+pre：プリフォーマットテキスト。改行や字下げを保持。
+blockquote：引用
+div：スタイリング目的でグループ化。
+-->
+
+<section>
+    <h1>今月のおいしいごはん</h1>
+    <article>
+        <h2>おいしいごはん　#12</h2>
+        <p><img src="resources/img_sample02.jpg" width="150" alt="ブラウザが画像を表示できない時の代替情報"></p>
+        <div style="background-color:greenyellow;">
+            <p>至高のTKG</p>
+            <hr>
+            <p>ところであの件は・・・？</p>
+        </div>
+        <pre>
+            aaaa
+               bbb
+                 ccc
+        </pre>
+        <blockquote>
+            TKG最高  by kaki
+        </blockquote>
+    </article>
+</section>
+
+<!--
+ol(orderd list)/ul(unorderd list)/li(list item)
+dl(definition list)/dt(definition term)/dd(definition discription)
+-->
+<!--
+string：重要ワード
+br：改行。line break
+span：タグそのものに意味は無い。
+-->
+<section>
+    <h1>新着のおいしいごはん</h1>
+    <article>
+        <h2>おいしいごはん　#32</h2>
+        <strong>洋風<br>肉じゃが</strong>
+        <a href="#procedure">→手順</a><!-- ページ内リンク -->
+        <h2>材料</h2>        
+        <ul>
+            <li><span style="color:blueviolet">じゃがいも</span></li>
+            <!-- targetを付けると、リンクを別タブで開く。 -->
+            <li><a href="http://ninjin.com" target="_blank">にんじん</a></li>
+            <li><a href="css_ tutorial.html">たまねぎ</a></li>
+        </ul>
+        <h2 id="procedure">手順</h2>        
+        <ol>
+            <li>炒める</li>
+            <li>まぜる</li>
+        </ol>
+    
+    </article>
+    <article>
+        <h2>おいしいごはん　#31</h2>
+        スリランカカレー
+    </article>
+</section>
+
+<section>
+<!--
+グローバル属性
+　id:１つしか無い要素
+　class：複数ある要素（複数保有できる）
+　style：スタールを直接指定
+-->
+    <p id="message">Hello World</p>
+    <p class="message">Hello World</p>
+    <p class="message active">Hello World</p>
+    <p class="message" style="background-color:darksalmon;">Hello World</p>
+</section>
+
+<!--
+table
+thead
+tbody
+tr：table row
+th：table header（見出し）
+td：table data
+-->
+<article>
+    <table>
+        <thead>
+            <tr>
+                <th>Size</th><th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>S</td><td>150</td>
+            </tr>
+            <tr>
+                <td>M</td><td>180</td>
+            </tr>
+            <tr>
+                <td>L</td><td>210</td>
+            </tr>
+            <tr>
+                <td colspan="2">free for Kids!</td>
+            </tr>
+        </tbody>
+    </table>
+</article>
+
+
+<!--
+form
+　　action：フォームに入力されたデータを、どこに送るか
+　　method：get/post
+
+input
+　　text
+　　submit
+　　password
+　　hidden
+　　textarea
+　　button
+　　checkbox
+　　radio
+　　label：checkbox や radioと関連付ける。
+　　select：ドロップダウンリスト
+
+　　＜以下、html5より使用可。＞
+　　email
+　　number
+　　date
+-->
+ 
+<article>
+    <h1>アンケート</h1>
+    <form action="target.php" method="post">
+        <p>
+            名前：
+            <input type="text" name="email" size="50" maxlength="15" value="初期値">
+        </p>
+        <p>
+            Phone：
+            <label><!-- checkboxタグに対応するテキスト等をクリックしても on/offが切り替えできるようにする。 -->
+                <input type="checkbox" name="phone" value="Android">Android
+            </label>
+            <input type="checkbox" name="phone" value="iPhone" id="iPhone" checked>
+                <label for="iPhone">
+                    iPhone
+                </label><!-- labelと関連付けるオブジェクトが離れている場合。idを指定する。 -->
+        </p>
+        <p>
+            color：
+            <input type="radio" name="color" value="Android"  checked>Red <!-- checked：初期選択 -->
+            <input type="radio" name="color" value="Blue">Blue
+        </p>
+        <p>
+            職業：
+            <input type="text" name="email" size="100" placeholder="please input your job. うっすら背景に出る文字。対応していないブラウザもある。">
+        </p>
+        <p>
+            住所：
+            <select name="city">
+                <option value="Tokyo">Tokyo</option>
+                <option value="Nagoya">Nagoya</option>
+                <option value="Osaka">Osaka</option>
+                <option value="Kyoto" selected>Kyoto</option><!-- 初期値 -->
+                <option value="Fukuoka">Fukuoka</option>
+            </select>
+        </p>
+        <p>
+            multi select：
+            <select name="sel2" multiple size="5"><!-- 複数選択 -->
+                <option value="value1">value1</option>
+                <option value="value2">value2</option>
+                <option value="value3">value3</option>
+                <option value="value4" selected>value4</option>
+                <option value="value5">value5</option>
+            </select>
+        </p>
+        <p>
+            メールアドレス：
+            <input type="email" name="email" required>  <!-- required：必須入力 -->
+        </p>                                            <!-- formタグに、novalidateを付けると、必須入力チェックを無効化できる。 -->
+        <p>
+            料金：
+            <input type="number" name="number">
+        </p>
+        <p>
+            誕生日：
+            <input type="date" name="birthday">
+        </p>
+        <p>
+            コメント：
+            <textarea cols="40" ros="5">コメント</textarea>
+        </p>
+        <p>
+            パスワード：
+            <input type="password" name="password">
+        </p>
+        <p>
+            <button type="button">何らかの処理</button>
+        </p>
+        <p>
+            <input type="submit" value="送信" disabled><!-- disabled：無効化 -->
+        </p>
+        <p>
+            <button type="submit"><strong style="background-color:greenyellow;">送信ボタンに装飾する場合！</strong></button>
+        </p>
+        <p>
+            <input type="hidden" name="user_id" value="abcde">
+        </p>
+    </form>
+</article>
+
+<article>
+<!--
+　　　　文字実態参照　　　数値文字参照
+　　<　　　&lt;    　　　　&#60;
+　　"　　　&quote;
+　　&　　　&amp;
+
+
+&nbsp;    半角スペース
+&ensp;    「n」の文字と同じ幅のスペース
+&emsp;    「m」の文字と同じ幅のスペース
+-->
+    <dev>
+        &lt;    　　　　&#60;    <br />
+        &quot;                  <br />
+        &amp;                   <br />
+    </dev>
+    
+<!--
+タグ
+    カテゴリ：どの分類か？
+    コンテンツモデル：どのカテゴリのタグを入れられるか？
+    　　トランスペアレント：親要素のコンテンツモデルを使ってね。
+-->
+    <dev style="background-color:greenyellow;">
+        <a href="https://www.w3.org/TR/html5/">W3c公式サイト</a><br />
+        h1タグの場合→<a href="https://www.w3.org/TR/html5/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements">こちら</a>
+        <p>
+            Categories:<br />
+            　　Flow content.<br />
+            　　Heading content.<br />
+            　　Palpable content.<br />
+            ・・・というカテゴリに所属している。
+        </p>
+        <p>
+            Content model:<br />
+            　　Phrasing content. <br />
+　　　　　　・・・h1に入れていいのは、Phrasing content に所属するタグのみ。
+        </p>
+
+        <h3>
+            <a>トランスペアレント。h3の要素を使う。(なので、sectionとかはここでは使えない。)</a>
+        </h1>
+
+    </dev>
+<article>
+
+<aside>
+    <h1>おすすめレシピ本</h1>
+    - Book1
+    - Book2
+    - Book3
+</aside>
+
+<footer>
+@kakisoft 2017
+</footer>
+
+    </body>
+</html>
+
+
+
+
+
