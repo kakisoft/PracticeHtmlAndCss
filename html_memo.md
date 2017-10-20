@@ -16,5 +16,7 @@ https://github.com/edihbrandon/RictyDiminished
 プログラミング用に作成されたフォント  
 download zip
 
+
+
 ##### アウトライン
-機械から見たページの構造です。
+機械から見たページの構造。
