@@ -42,9 +42,60 @@ px：ピクセル。（≒ドット）
 em：相対的な値。ベースとなっている親要素のフォントサイズに対して、何倍か。（何文字文か）。2emなら、親に対して２倍。
 %：相対的な値。ベースとなっている親要素のフォントサイズに対して、何%か。
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【 text 】
+
+    border: brown 5px double;
+    margin:20px;
+    color:black;
+    font-size: 14px;
+    font-family: Arial, Helvetica;（優先順位が高い順に記述）
+    font-weight: bold/normal;
+    text-align: right/center/left;（揃え位置）
+    text-decoration: underline/line-through/none;（下線/打消し戦/リンクの下線消し）
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【 border/margin 】
+
+border-color
+border-width
+border-style
+　　solid：実線
+　　dotted：点線
+　　dashed：破線
+　　double：二重線
+　　inset：立体的に見せる
+　　outset：立体的に見せる
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【 list-style 】
+
+list-style-type: disc/circle/square/decimal/lower-alpha/lower-roman（黒丸/白丸/四角/数値/アルファベット/ローマ数字）
+list-style-position: inside/outside;（要素内の改行位置の差。insideは、マーカーが内側に入る。）
+list-style: url("xxxx"); （画像。list-style-typeは無効となる）
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【 cursor 】
+カーソルを合わせた時のマウスポインタの画像
+
+    cursor: help;（？マーク）
+    cursor: move;（上下左右の矢印）
+    cursor: pointer;（指マーク）
+    cursor: url("shrimp_mini.png"), auto;（画像。無い場合、auto（規定の内容を使用。編集可。））
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【 ボックスモデル 】
+下に積み重なっていく要素。
+【 ブロックレベル要素 】
+h1、p のように、ボックスモデルを生成する要素
+
+【 インラインボックス 】
+左に積み重なっていく要素。
+【 インラインレベル要素 】
+span、a のように、インラインボックスを生成する要素
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 * {
-    color: skyblue;
+    color: rgb(21, 91, 170);
 }
 #first {
     color:orange;
@@ -138,4 +189,125 @@ div#ctg1 > h4 { color:rgb(0%, 0%, 100%) }
 /*
 ボックスモデル
 */
+div#ctg2 {
+    color:black;
+    background: silver;
+    width: 200px;
+    height: 100px;
+}
+
+body, html{ height:100% }
+div#ctg3 {
+    color:blue;
+    background: rgb(121, 73, 73);
+    width: 50%;  /* ブラウザの大きさを変えると、動的に変更される */
+    height: 10%; /* 高さに関しては、親要素のサイズを明示しなければならない。 */
+}
+
+div#ctg4 {
+    border-color: orange;
+    border-width: 4px;
+    border-style: dotted;
+}
+
+div#ctg5 { /* ↑と同じ */
+    border: orange 4px dotted;
+}
+
+/* 
+パティング 
+*/
+body{ margin:0 }
+div#ctg6 {
+    border-top: orange 4px dotted;
+    border-bottom: orange 4px dotted;
+    border-left: orange 4px dotted;
+    border-right: orange 4px dotted;
+
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-right:4px;
+    padding-left:4px;
+}
+
+/* 
+マージン 
+*/
+div#ctg7 {
+    border: black 5px double;
+    margin:10px 20px 40px;
+}
+/* marginの相殺。↑の下 40pxと↑の上20pxの値を合算して 60pxとならず、大きい方（40px）が設定される。  */
+div#ctg8 {
+    border: brown 5px double;
+    margin:20px;
+    /* -------------- */
+    color:black;
+    font-size: 14px;
+    font-family: Arial, Helvetica;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline line-through;
+}
+
+/* 
+リストスタイル 
+*/
+div#ctg9 > ul {
+    list-style-type: lower-roman;
+    list-style-position: inside;
+    list-style: url("shrimp_mini.png");
+}
+
+/* 
+カーソル 
+*/
+.help {
+    cursor: help;
+}
+.dragme {
+    cursor: move;
+}
+.clickme {
+    cursor: pointer;
+}
+.shrimp {
+    cursor: url("shrimp_mini.png"), auto;
+}
+
+/*
+背景
+*/
+body {
+    background-color: rgb(241, 226, 226);
+    background-image: url("shrimp.png");
+    background-repeat: no-repeat; /* 1回だけ表示 */
+    /* background-repeat: repeat-x; */ /* X方向だけ繰り返し表示 */
+    background-position: top center;
+    /* background-position: 10px 10px; */
+    background-attachment: fixed; /* スクロースしても画像を固定 */
+    /* background-attachment: scroll; */
+}
+/*
+以下のようにまとめて書くこともできる。順不同。
+body { background: url("shrimp.png") no-repeat top center }
+*/
+
+/*
+display（ボックスモデル・インラインボックス）
+*/
+div#ctg10 > h1 {
+     border: 1px solid blue; 
+     display: inline; /* *
+}
+div#ctg10 > p { 
+    border: 1px solid blue; 
+    display: inline;
+}
+div#ctg10 > span { 
+    border: 1px solid blue; 
+}
+div#ctg10 > a { 
+    border: 1px solid blue; 
+}
 
