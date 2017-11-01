@@ -4,7 +4,7 @@
 * ：ユニバーサルクラスタ。全セレクタを指す。『*.{color...}』とか。
 要素名：p とか h1 とかのタグ。
 # ： id
-. ： class
+. ： class（タグには classを複数指定可）
 ================================================
 a, b ：aとbが対象
 a b  ：aの下の階層の b全てが対象
@@ -91,6 +91,23 @@ h1、p のように、ボックスモデルを生成する要素
 左に積み重なっていく要素。
 【 インラインレベル要素 】
 span、a のように、インラインボックスを生成する要素
+
+display
+ - blocl（ブロックボックスとして使用）
+ - inline（インラインボックスとして使用）※幅と高さの指定は無効となる。指定したい場合は inline-blockを使う。
+ - list-item（左にマーカーをつける）
+ - inline-block（インラインレベルの要素のように左詰めだが、ブロックレベル要素の性質を持つ）
+ - none（表示しない）
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【 position 】
+static   （標準。位置を指定できない。）
+relative （staticの位置からズラして表示）
+fixed    （スクロールさせても動かない。通常の要素の位置から外れる。）
+absolute （親要素のポジションによって、配置の基準が変わる。親要素が staticの時、Windowが基準となる。）
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【 z-index 】 要素の重なり具合を表す ※position:static以外の時のみ有効
+値が大きいほど上に行く
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
@@ -298,16 +315,93 @@ display（ボックスモデル・インラインボックス）
 */
 div#ctg10 > h1 {
      border: 1px solid blue; 
-     display: inline; /* *
+     display: inline; 
 }
 div#ctg10 > p { 
     border: 1px solid blue; 
-    display: inline;
+    display: inline-block;
+    width: 80px;
+    height: 50px;
 }
 div#ctg10 > span { 
     border: 1px solid blue; 
+    display: none;
 }
 div#ctg10 > a { 
     border: 1px solid blue; 
+    display: list-item;
+}
+
+/*
+display  table
+*/
+.container {
+    display: table;
+    width: 300px;
+}
+.box {
+    display: table-cell;
+    width: 100px;
+}
+.row {
+    display: table-row;
+}
+.gray{ background-color: gray;}
+.silver{ background-color: silver }
+.orange{ background-color: orange }
+
+/*
+pisition
+*/
+#box1 { width:100px; height: 50px; }
+#box2 { width:100px; height: 50px; }
+#box3 { width: 50px; height: 25px; }
+
+#box1 {
+    background: gray;
+    position: relative;
+    top:10px;
+    left: 10px;
+}
+#box2 {
+    background: silver;
+    position: relative;
+}
+#box3 {
+    background: orange;
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+
+/*
+z-index
+*/
+#box4, #box5, #box6 { 
+    width:100px; 
+    height: 50px; 
+    position: relative;
+}
+
+#box4 {
+    background: gray;
+    top:10px;
+    left:10px;
+    position: relative;
+    z-index: 3;
+}
+#box5 {
+    background: silver;
+    top:20px;
+    left:20px;
+    position: relative;
+    z-index: 1;
+}
+#box6 {
+    background: orange;
+    top:30px;
+    left:30px;
+    position: relative;
+    z-index: 2;
 }
 
