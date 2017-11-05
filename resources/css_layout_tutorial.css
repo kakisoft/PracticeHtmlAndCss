@@ -1,0 +1,48 @@
+header {
+    background: tomato;
+}
+
+main {
+    background: skyblue;
+}
+
+footer {
+    background: slategray;
+    clear: both;
+}
+
+.container {
+    width: 500px;
+    margin : 0 auto; /* 左右の中央揃え */
+    /* background: pink; */
+}
+
+/* footerの背景色をページの下に延ばす時のテクニック */
+/* 
+body {
+    background: slategray;
+} 
+*/
+
+#eyechatch {
+    background: url("eyechatch.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 20%; /* 伸縮の基準位置(x y)。デフォルトは左上。 */
+    height: 100px;
+}
+
+#left {
+    background: limegreen;
+    float: left;
+    width: 200px
+}
+
+#right {
+    background: lightgreen;
+    float: right;
+    width: 300px
+}
+
+.clearfix::after {
+    content: ''
+}
