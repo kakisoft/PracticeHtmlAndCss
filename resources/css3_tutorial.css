@@ -1,0 +1,187 @@
+/*
+【 大きさ 】
+px, em, %
+rem ☆new☆  ルート要素に対して emを適用。（emは親要素に対して適用）
+*/
+html {
+    font-size:16px; 
+}
+#p1 {
+    font-size: 2rem;
+}
+#p2 {
+    font-size: 0.5rem;
+}
+
+/*
+【 色 】
+rgba
+  - R, G, B
+  - Alpha (0-1) ☆NEW☆　透明度を設定。0が完全な透明。1が不透明。
+
+hsl / hsla
+  - Hue 0-360  色相
+  - Saturation 0-100%　鮮やかさ
+  - Lightness 0-100%　明るさ
+  - Alpha (0-1)  透明度
+*/
+div#ctg02 {
+    width:100px;
+    height:50px;
+} 
+#box1 {
+    background: rgb(255, 100, 100);
+}
+#box2 {
+    background: rgba(255, 100, 100, .2); /* 0は省略可。左記は 0.2 */
+}
+#box3 {
+    background: hsla(210, 100%, 50%, .7);
+}
+#box4 {
+    background: hsla(210, 100%, 40%, .7);
+}
+
+/*
+透明（要素全体に適用）
+*/
+body { background: skyblue; }
+
+img {
+  border: 7px solid blue;
+  opacity: 0.3;
+  width: 1  50px;
+}
+
+/*
+属性セレクタ
+
+- a[href]
+- a[href="foo"]
+- a[href~="foo"] 値がスペース区切りで、fooを含むか
+
+- a[href^="foo"] fooから始まる
+- a[href$="foo"] fooで終わる
+- a[href*="foo"] fooを含む
+
+*/
+div#ctg04 a[href^="http"] { color: orange; }
+div#ctg04 a[href$=".com"] { color: orange; }
+div#ctg04 a[href*=".co.jp"] { color: orange; }
+
+/*
+擬似クラス
+nth-child
+（隣接している要素に対して適用）
+*/
+
+/*li:last-child*/
+/*li:nth-child(3)*/
+/*li:nth-child(odd)*/     /* 奇数 */
+/*li:nth-child(even)*/    /* 偶数 */
+/*li:nth-child(3n+1)*/    /* nは自然数 */
+/*li:nth-last-child(4)*/  /* 末尾から */
+li:only-child
+{
+  background: violet;
+}
+
+/*
+擬似クラス
+nth-of-type
+（隣接していない要素に対しても適用）
+*/
+
+/*p:first-of-type*/
+/*p:last-of-type*/
+/*p:nth-of-type(3)*/
+/*p:nth-last-of-type(4)*/
+h2:only-of-type /* 要素が１つだけの時に適用 */
+{
+  background: violet;
+}
+
+/*
+擬似クラス
+*/
+
+/*li:not(.target)*/
+/*li:empty*/
+/*input[type="text"]:enabled*/
+/*input[type="text"]:disabled*/
+input[type="checkbox"]:checked + label
+{
+  background: violet;
+}
+
+/*
+角丸
+*/
+div#ctg08 {
+    width: 200px;
+    height: 200px;
+    background: skyblue url('img_sample01.jpg');
+    /*border-radius: 30px / 15px;*/        /* 楕円 */
+    /*border-bottom-right-radius: 30px;*/
+    /*border-radius: 10px 20px 30px;  */   /* 左上から時計回り */
+    border-radius: 50%; /* 50%で正円 */
+  }
+
+/*
+【 背景画像 】
+
+cover
+画像の縦横比を保持しつつ、画像の背景領域を常にカバーするように配置。
+大きさによっては不要な部分は切り取られて表示されるので、必ずしも画像全体が表示されるわけではない点に注意。
+
+contain 
+画像の縦横比を保持しつつ、必ず画像の全体が表示されるように配置。
+
+background-position
+余った領域や、cover を指定した時に切り取られる領域をどこに配置するかを制御。
+*/
+body { margin: 0; }
+
+div#ctg09 header {
+  width: 100%;
+  height: 130px;
+  background: url('cafe.jpg') no-repeat skyblue;
+  /*background-size: 50%;*/       /* 横幅 */
+  /*background-size: 50% 100%;*/  /* 横幅 高さ */
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+/*
+【 背景画像 】
+カンマ区切りで複数設定可。後ろに配置すると、後ろに来る。
+*/
+div#ctg10 header {
+    width: 100%;
+    height: 200px;
+    background:
+      url('0001.gif') no-repeat 0 0, /* 左上に表示 */
+      url('0002.gif') no-repeat 30px 30px,
+      url('0003.gif') no-repeat bottom right; /* 右下に表示 */
+}
+
+/*
+線形グラデーション
+*/
+div#ctg11 div#sub1 {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(skyblue, blue);
+}
+
+div#ctg11 div#sub2 {
+    width: 200px;
+    height: 200px;
+    /*background-image: linear-gradient(skyblue, blue);*/
+    /*background-image: linear-gradient(to top left, skyblue, blue);*/
+    /*background-image: linear-gradient(45deg, skyblue, blue);*/
+    /*background-image: linear-gradient(lightgreen, skyblue, blue);*/
+    /*background-image: linear-gradient(lightgreen 10%, skyblue 70%, blue);*/
+    background-image: repeating-linear-gradient(lightgreen, skyblue 20px);
+}
