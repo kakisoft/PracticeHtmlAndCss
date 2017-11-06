@@ -43,7 +43,7 @@ div#ctg02 {
 }
 
 /*
-透明（要素全体に適用）
+【 透明（要素全体に適用） 】
 */
 body { background: skyblue; }
 
@@ -54,7 +54,7 @@ img {
 }
 
 /*
-属性セレクタ
+【 属性セレクタ 】
 
 - a[href]
 - a[href="foo"]
@@ -70,7 +70,7 @@ div#ctg04 a[href$=".com"] { color: orange; }
 div#ctg04 a[href*=".co.jp"] { color: orange; }
 
 /*
-擬似クラス
+【 擬似クラス 】
 nth-child
 （隣接している要素に対して適用）
 */
@@ -87,7 +87,7 @@ li:only-child
 }
 
 /*
-擬似クラス
+【 擬似クラス 】
 nth-of-type
 （隣接していない要素に対しても適用）
 */
@@ -102,9 +102,8 @@ h2:only-of-type /* 要素が１つだけの時に適用 */
 }
 
 /*
-擬似クラス
+【 擬似クラス 】
 */
-
 /*li:not(.target)*/
 /*li:empty*/
 /*input[type="text"]:enabled*/
@@ -115,7 +114,7 @@ input[type="checkbox"]:checked + label
 }
 
 /*
-角丸
+【 角丸 】
 */
 div#ctg08 {
     width: 200px;
@@ -167,7 +166,7 @@ div#ctg10 header {
 }
 
 /*
-線形グラデーション
+【 線形グラデーション 】
 */
 div#ctg11 div#sub1 {
     width: 200px;
@@ -184,4 +183,175 @@ div#ctg11 div#sub2 {
     /*background-image: linear-gradient(lightgreen, skyblue, blue);*/
     /*background-image: linear-gradient(lightgreen 10%, skyblue 70%, blue);*/
     background-image: repeating-linear-gradient(lightgreen, skyblue 20px);
+}
+
+/*
+【 円形グラデーション 】
+*/
+div#ctg12 {
+    width: 200px;
+    height: 200px;
+    /*background-image: radial-gradient(skyblue, blue);*/
+    /*background-image: radial-gradient(at 30px 40px, skyblue, blue);*/
+    /*background-image: radial-gradient(ellipse 20px 30px at 30px 40px, skyblue, blue);*/
+    /*background-image: radial-gradient(circle 20px at 30px 40px, skyblue, blue);*/
+    /*background-image: radial-gradient(farthest-side at 30px 40px, skyblue, blue);*/
+    background-image: repeating-radial-gradient(
+      skyblue, blue 20px);
+  }
+
+/*
+【 影を付ける 】
+box-shadow
+text-shadow
+*/
+div#ctg13 h1 {
+    text-shadow: 2px 2px 0   rgba(0,0,0,.4);
+  }
+  
+div#ctg13 #sub13-1 {
+  width: 200px;
+  height: 100px;
+  background: #fff;
+  /* x y ぼかし 影の大小 */
+  box-shadow: 10px 20px 4px 10px  rgba(0,0,0,.4);
+}
+
+div#ctg13 #sub13-2 {
+    width: 200px;
+    height: 100px;
+    background: #fff;
+    /* inset：影を内側 */
+    /* 影を複数付ける事もできる */
+    box-shadow: 10px 20px 4px 10px  rgba(0,0,0,.4) inset,
+    10px 20px 4px 10px violet;
+  }
+  
+/*
+【 変形 】
+transform:translate（移動）
+transform:scale（拡大・縮小）
+transform:skew（傾斜）
+transform:rotate（回転）
+transform-origin（起点。デフォルトは中心）
+
+ベンダープレフィックス
+-moz-     （Firefox）
+-o-       （Opera）
+-webkit-  （Chrome, Safari）
+-ms-      （IE）
+*/
+.sub14 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+  
+.sub14-1 {
+    background: darkgreen;
+    opacity: .5;
+}
+  
+.sub14-2 {
+    background: orange;
+    opacity: .5;
+    /*transform:translate(20px, 40px);*/
+    /*transform:translateX(20px);*/
+    /*transform:scale(0.5, 1.5);*/
+    /*transform:skew(10deg, 20deg);*/
+    -webkit-transform:rotate(30deg);  /* 対象ブラウザはこちらを見る。それ以外は↓を見る */
+    transform:rotate(30deg);
+    /*transform-origin: 50% 50%;*/
+    transform-origin: 0 0;
+}
+
+/*
+transition
+
+transition-timing-function
+- ease         開始と終了がなめらか
+- linear       等速度でアニメーションする
+- ease-in      開始がゆっくり
+- ease-out     終了がゆっくり
+- ease-in-out  開始と終了がゆっくり
+*/
+
+div#ctg15 {
+    width: 100px;
+    height: 50px;
+    background: violet;
+  
+    /*
+    transition-property:all;  どのプロパティを対象にするか。（width, heightなど）
+    transition-duration:2s;   変化にかかる時間。左記は 2秒
+    transition-timing-function:ease;
+    transition-delay:0.8s;    変化が開始するまで何秒かかるか。
+    */
+    transition: all 2s ease 0.8s;
+}
+  
+div#ctg15:hover {
+    width: 200px;
+    height: 50px;
+    background: blue;
+}
+
+/*
+animation
+*/
+div#ctg16 {
+    width: 50px;
+    height: 50px;
+    background: skyblue;
+  
+    -webkit-animation-name: slidein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-delay: .1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+  }
+  
+@-webkit-keyframes slidein {
+    0% {
+      margin-left: 100%;
+      background: white;
+    }
+    70% {
+      margin-left: 50%;
+      background: blue;
+    }
+    100% {
+      margin-left: 0%;
+    }
+}
+
+/*
+width/height
+- box-sizing
+*/
+div#ctg17 .container {
+  width: 320px;
+  height: 100px;
+  background: skyblue;
+}
+
+div#ctg17 .box {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  /*width: 80px;
+  height: 70px;*/
+  background: #eee;
+  float: left;
+
+  padding: 10px;
+  border-bottom: 30px solid #ccc;
+}
+
+div#ctg17 .box + .box {
+  margin-left: 10px;
 }

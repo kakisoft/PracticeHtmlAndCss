@@ -1,3 +1,5 @@
+cssは大文字・小文字を区別する  
+  
 ### Chrome Developer Tools
 Ctrl + Shift + i  
 Element→Styles タブより、
