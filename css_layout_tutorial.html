@@ -26,10 +26,33 @@
 
         <main>
             <div class="container">
-                <div id="left">left</div>
-                <div id="right">right</div>
+                <div class="left1">left</div>
+                <div class="right1">right</div>
             </div>
+            <!-- floatした時、クリアしていないと、footerが食い込む形になる -->
             <div style="clear:both"></div>
+
+
+            <!-- clear:both が不要。 -->
+            <div class="container clearfix">
+                <div class="left2">left</div>
+                <div class="right2">right</div>
+            </div>
+
+
+            <!-- clear:both が不要。 -->
+            <div class="container clearfix">
+                <div class="left3">left</div>
+                <div class="right3">right</div>
+            </div>
+
+
+            <!-- clear:both が不要。 -->
+            <div class="container clear">
+                <div class="left3">Left</div>
+                <div class="right3">Right</div>
+            </div>            
+
         </main>
 
 

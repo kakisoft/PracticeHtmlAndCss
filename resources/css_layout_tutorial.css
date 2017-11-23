@@ -31,18 +31,56 @@ body {
     height: 100px;
 }
 
-#left {
+.left1 {
     background: limegreen;
     float: left;
-    width: 200px
+    width: 180px;
+    margin-right: 20px; /* 余白 */
 }
 
-#right {
+.right1 {
     background: lightgreen;
     float: right;
-    width: 300px
+    width: 300px;
+}
+
+.left2 {
+    background: limegreen;
+    float: left;
+    width: 180px;
+}
+
+.right2 {
+    background: lightgreen;
+    float: right;
+    width: 300px;
+}
+
+.left3, .right3 {
+  padding: 10px;
+  box-sizing: border-box
+}
+
+.left3 {
+  background: limegreen;
+  float: left;
+  width: 180px;
+}
+
+.right3 {
+  background: lightgreen;
+  float: right;
+  width: 300px;
 }
 
 .clearfix::after {
-    content: ''
+    content: '';
+    display: block;
+    clear: both;
 }
+
+.clear {
+    overflow: hidden;
+}
+
+

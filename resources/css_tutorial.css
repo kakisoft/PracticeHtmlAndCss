@@ -191,6 +191,12 @@ a[class~="search"] {color:green}
 
 /*
 【　疑似クラス　】
+:link
+:visited
+:hover
+:active
+など
+http://weboook.blog22.fc2.com/blog-entry-287.html
 */
 
 /* ul > liの、最初の要素だけに、特定の style を適用。 */
@@ -208,6 +214,11 @@ input:focus {color:red } /* フォーカスされた時だけ色が変わる */
 
 /*
 【　疑似要素　】
+::first-letter　･･･　最初に現れる文字に適用
+::first-line　･･･　最初の行に適用
+::before　･･･　要素の前に内容を追加
+::after　･･･　要素の後に内容を追加
+など
 */
 div > div > p:first-line { color:red } /* pタグの１行目 */
 div > div > p:first-letter { font-size: 20pt} /* 最初の文字 */
