@@ -5,6 +5,8 @@ Ctrl + Shift + i
 Element→Styles タブより、
 どの cssファイルが制御対象となっているか確認できる。  
   
+### vs Code プレビュー
+Ctrl Q → w
 
 
 ### HTML5公式ドキュメント
