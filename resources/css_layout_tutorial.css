@@ -73,6 +73,27 @@ body {
   width: 300px;
 }
 
+#left {
+  background: limegreen;
+  float: left;
+  width: 100px;
+  margin-right: 10px;
+}
+
+#center {
+  background: seagreen;
+  float: left;
+  width: 280px;
+  /*margin-right: 10px;*/
+}
+
+#right {
+  background: lightgreen;
+  /*float: left;*/
+  float: right;
+  width: 100px;
+}
+
 .clearfix::after {
     content: '';
     display: block;
