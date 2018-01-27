@@ -1,0 +1,5 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+IE=edgeってなに？
+
+IE=edgeは使用しているIEの最新バージョンの標準モードで表示してくれるものです。IE=7,IE=9とか複数指定することもできます。
