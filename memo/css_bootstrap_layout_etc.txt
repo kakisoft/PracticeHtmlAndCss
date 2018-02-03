@@ -5,13 +5,6 @@ https://medium.com/coiney-product-team/%E3%81%86%E3%82%8F%E3%81%A3-%E7%A7%81%E3%
 padding margin
 http://taneppa.net/margin_padding/
 
-### フォント
-＜スタンダード日本Webサイトなら＞
-font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-
-＜今流行の感じを出していく（かつ文字コンテンツがメインなら）＞
-font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-
 ### CSS
 .
 class
