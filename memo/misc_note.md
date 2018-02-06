@@ -7,8 +7,10 @@ Element→Styles タブより、
   
 ### vs Code プレビュー
 Ctrl Q → w
-
-
+  
+### Chrome：ソースを表示
+Ctrl + U
+  
 ### HTML5公式ドキュメント
 https://www.w3.org/TR/html5/  
 「w3c html5」  
