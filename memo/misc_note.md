@@ -5,11 +5,14 @@ Ctrl + Shift + i
 Element→Styles タブより、
 どの cssファイルが制御対象となっているか確認できる。  
   
+  
 ### vs Code プレビュー
 Ctrl Q → w
   
+  
 ### Chrome：ソースを表示
 Ctrl + U
+  
   
 ### HTML5公式ドキュメント
 https://www.w3.org/TR/html5/  
