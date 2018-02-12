@@ -16,4 +16,6 @@ https://kakisoft.github.io/HtmlAndCssMemo/my-parts.html
 
 https://kakisoft.github.io/HtmlAndCssMemo/my_parts.html  
 
+https://kakisoft.github.io/HtmlAndCssMemo/myparts1.html  
+
 
