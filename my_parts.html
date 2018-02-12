@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="discription" content="kakisoft">
+        <title>My Parts</title>
+        <link rel="shortcut icon" href="resources/favicon.ico">
+        <link rel="stylesheet" href="resources/normalize.css">
+<!--
+#FF6407
+255,100,7
+-->
+        <style>
+            #sample01{
+                border-left: 10px solid #cc3366; /* 左ボーダーを、10px幅の実線、線色#CC3366に */
+            }
+            #sample02{
+                border-left: 10px solid #CC3366;
+                border-bottom: 1px dashed #CC3366; /* 下ボーダーを、1px幅の破線、線色#CC3366に */
+            }
+            #sample03{
+                border: 1px solid #CC3366; /* 4辺のボーダーを、1px幅の実線、線色#CC3366に */
+                border-left: 10px solid #CC3366;
+            }
+            #sample04{
+                border: 1px solid #CC3366;
+                border-left: 10px solid #CC3366;
+                background-color: #FFCCCC; /* 背景色を#FFCCCC */
+            }
+            #sample05{
+                border-left: 10px solid #FFCCCC;
+                background-color: #CC3366; /* 背景色を#CC3366 */
+                color: #FFFFFF; /* 文字色を#FFFFFF */
+            }
+            #sample06{
+                background-color: #CC3366;
+                color: #FFFFFF;
+                border-radius: 10px; /* 4つのコーナーを半径10pxの角丸に */
+                padding-left: 20px; /* 左パディングを20px */
+            }
+            #sample11 {
+                padding: 0.5em;/*文字周りの余白*/
+                color: #494949;/*文字色*/
+                background: #fffaf4;/*背景色*/
+                border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+            }
+            #sample12 {
+                position: relative;
+                background: #dfefff;
+                box-shadow: 0px 0px 0px 5px #dfefff;
+                border: dashed 2px white;
+                padding: 0.2em 0.5em;
+                color: #454545;
+            }
+            #sample13 {
+                background: linear-gradient(transparent 70%, #a7d6ff 70%);
+            }
+
+            .square_btn1{
+                display: inline-block;
+                padding: 0.5em 1em;
+                text-decoration: none;
+                background: #668ad8;/*ボタン色*/
+                color: #FFF;
+                border-bottom: solid 4px #627295;
+                border-radius: 3px;
+            }
+            .square_btn1:active {/*ボタンを押したとき*/
+                -ms-transform: translateY(4px);
+                -webkit-transform: translateY(4px);
+                transform: translateY(4px);/*下に動く*/
+                border-bottom: none;/*線を消す*/
+            }            
+
+            .square_btn2 {
+                position: relative;
+                display: inline-block;
+                padding: 0.25em 0.5em;
+                text-decoration: none;
+                color: #FFF;
+                background: #fd9535;/*背景色*/
+                border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+                border-radius: 4px;/*角の丸み*/
+                box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+                font-weight: bold;
+            }
+            .square_btn2:active {
+                border-bottom: solid 2px #fd9535;
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+            }
+
+            .square_btn3{
+                display: inline-block;
+                padding: 7px 20px;
+                border-radius: 25px;
+                text-decoration: none;
+                color: #FFF;
+                background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+                background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+                transition: .4s;
+            }
+            .square_btn3:hover {
+                background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+                background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+            }
+
+            .btn4{
+                display: inline-block;
+                text-decoration: none;
+                background: #ff8181;
+                color: #FFF;
+                width: 120px;
+                height: 120px;
+                line-height: 120px;
+                border-radius: 50%;
+                text-align: center;
+                font-weight: bold;
+                vertical-align: middle;
+                overflow: hidden;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+                border-bottom: solid 3px #bd6565;
+                transition: .4s;
+            }
+            .btn4:active{
+                -ms-transform: translateY(2px);
+                -webkit-transform: translateY(2px);
+                transform: translateY(2px);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+                border-bottom: none;
+            }
+        </style>
+
+        <!--
+        <link rel="stylesheet" href="resources/reset.css">
+-->
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                header
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <a href="https://saruwakakun.com/html-css/reference/css-sample">色々</a>
+            </div>
+            <div>
+                <h1 id="sample01">h1要素の見出しサンプル1</h1>
+                <h1 id="sample02">h1要素の見出しサンプル2</h1>
+                <h1 id="sample03">h1要素の見出しサンプル3</h1>
+                <h1 id="sample04">h1要素の見出しサンプル4</h1>
+                <h1 id="sample05">h1要素の見出しサンプル5</h1>
+                <h1 id="sample06">h1要素の見出しサンプル6</h1>
+                <h1 id="sample11">h1要素の見出しサンプル11</h1>
+                <h1 id="sample12">h1要素の見出しサンプル12</h1>
+                <h1 id="sample13">h1要素の見出しサンプル13</h1>
+                <a href="https://saruwakakun.com/html-css/reference/h-design">参考</a>
+            </div>
+
+            <div>
+                <a href="#" class="square_btn1">BUTTON1</a>
+                <a href="#" class="square_btn2">BUTTON2</a>
+                <a href="#" class="square_btn3">BUTTON3</a>
+                <a href="#" class="btn4">BUTTON</a>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="container">
+                footer
+            </div>
+        </footer>
+    
+    </body>
+</html>
+
+
+
+
+

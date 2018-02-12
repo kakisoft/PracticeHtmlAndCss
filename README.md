@@ -14,4 +14,6 @@ https://kakisoft.github.io/HtmlAndCssMemo/website_tutorial.html
 
 https://kakisoft.github.io/HtmlAndCssMemo/my-parts.html  
 
+https://kakisoft.github.io/HtmlAndCssMemo/my_parts.html  
+
 
