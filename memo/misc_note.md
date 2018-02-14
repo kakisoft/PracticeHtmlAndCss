@@ -14,6 +14,16 @@ Ctrl Q → w
 Ctrl + U
   
   
+### 要素の確認
+Chrome  
+右クリック→検証
+  
+  
+### 色の抽出
+Chromeプラグイン  
+ColorPick Eyedropper  
+  
+  
 ### HTML5公式ドキュメント
 https://www.w3.org/TR/html5/  
 「w3c html5」  
