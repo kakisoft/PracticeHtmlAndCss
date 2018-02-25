@@ -147,6 +147,13 @@ floatを解除。
 clear: right;
 clear:both
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【 margin 】 
+
+p.sample1 {margin: 10px;}                   （上下左右）
+p.sample2 {margin: 10px 20px;}              （上下）  （左右）
+p.sample3 {margin: 10px 20px 30px;}         （上）  （左右）  （下）
+p.sample4 {margin: 10px 20px 30px 40px;}    （上）  （右）  （下）  （左）
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 【 vertical-align 】 
 
