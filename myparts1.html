@@ -80,7 +80,7 @@
                       button
             ==========================
             */
-            .square_btn1{
+            #button-sample01{
                 display: inline-block;
                 padding: 0.5em 1em;
                 text-decoration: none;
@@ -89,14 +89,13 @@
                 border-bottom: solid 4px #627295;
                 border-radius: 3px;
             }
-            .square_btn1:active {/*ボタンを押したとき*/
+            #button-sample01:active {/*ボタンを押したとき*/
                 -ms-transform: translateY(4px);
                 -webkit-transform: translateY(4px);
                 transform: translateY(4px);/*下に動く*/
                 border-bottom: none;/*線を消す*/
             }            
-
-            .square_btn2 {
+            #button-sample02 {
                 position: relative;
                 display: inline-block;
                 padding: 0.25em 0.5em;
@@ -108,12 +107,11 @@
                 box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
                 font-weight: bold;
             }
-            .square_btn2:active {
+            #button-sample02:active {
                 border-bottom: solid 2px #fd9535;
                 box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
             }
-
-            .square_btn3{
+            #button-sample03{
                 display: inline-block;
                 padding: 7px 20px;
                 border-radius: 25px;
@@ -123,12 +121,11 @@
                 background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
                 transition: .4s;
             }
-            .square_btn3:hover {
+            #button-sample03:hover {
                 background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
                 background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
             }
-
-            .btn4{
+            #button-sample04{
                 display: inline-block;
                 text-decoration: none;
                 background: #ff8181;
@@ -145,7 +142,7 @@
                 border-bottom: solid 3px #bd6565;
                 transition: .4s;
             }
-            .btn4:active{
+            #button-sample04:active{
                 -ms-transform: translateY(2px);
                 -webkit-transform: translateY(2px);
                 transform: translateY(2px);
@@ -154,9 +151,9 @@
             }
 
             /*
-            ==========================
+            //////////////////////////
                     MyStyle
-            ==========================
+            //////////////////////////
             */
             .my-blockquote-01 {
                 padding: 10px;
@@ -192,7 +189,7 @@
 
         <!--
         <link rel="stylesheet" href="resources/reset.css">
-        -->
+        ee-->
     </head>
     <body>
         <header>
@@ -234,10 +231,10 @@
             ==========================
             -->
             <div>
-                <a href="#" class="square_btn1">BUTTON1</a>
-                <a href="#" class="square_btn2">BUTTON2</a>
-                <a href="#" class="square_btn3">BUTTON3</a>
-                <a href="#" class="btn4">BUTTON</a>
+                <a href="#" id="button-sample01">BUTTON1</a>
+                <a href="#" id="button-sample02">BUTTON2</a>
+                <a href="#" id="button-sample03">BUTTON3</a>
+                <a href="#" id="button-sample04">BUTTON</a>
             </div>
 
             <!--
