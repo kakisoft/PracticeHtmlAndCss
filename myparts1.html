@@ -13,40 +13,57 @@
 #FF4500
 -->
         <style>
-            #sample01{
+            /*
+            ==========================
+                        hr
+            ==========================
+            */
+            #hr-sample01 {
+            height:0px;
+            border-radius: 2px;
+            border: 2px solid #08c;
+            width: 80%;
+            }
+
+            /*
+            ==========================
+                        h1
+            ==========================
+            */
+            #h1-sample01{
                 border-left: 10px solid #cc3366; /* 左ボーダーを、10px幅の実線、線色#CC3366に */
             }
-            #sample02{
+            #h1-sample02{
                 border-left: 10px solid #CC3366;
                 border-bottom: 1px dashed #CC3366; /* 下ボーダーを、1px幅の破線、線色#CC3366に */
             }
-            #sample03{
+            #h1-sample03{
                 border: 1px solid #CC3366; /* 4辺のボーダーを、1px幅の実線、線色#CC3366に */
                 border-left: 10px solid #CC3366;
             }
-            #sample04{
+            #h1-sample04{
                 border: 1px solid #CC3366;
                 border-left: 10px solid #CC3366;
                 background-color: #FFCCCC; /* 背景色を#FFCCCC */
             }
-            #sample05{
+            #h1-sample05{
                 border-left: 10px solid #FFCCCC;
                 background-color: #CC3366; /* 背景色を#CC3366 */
                 color: #FFFFFF; /* 文字色を#FFFFFF */
             }
-            #sample06{
+            #h1-sample06{
                 background-color: #CC3366;
                 color: #FFFFFF;
                 border-radius: 10px; /* 4つのコーナーを半径10pxの角丸に */
                 padding-left: 20px; /* 左パディングを20px */
             }
-            #sample11 {
+            #h1-sample11 {
                 padding: 0.5em;/*文字周りの余白*/
                 color: #494949;/*文字色*/
                 background: #fffaf4;/*背景色*/
                 border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
             }
-            #sample12 {
+            #h1-sample12 {
                 position: relative;
                 background: #dfefff;
                 box-shadow: 0px 0px 0px 5px #dfefff;
@@ -54,10 +71,15 @@
                 padding: 0.2em 0.5em;
                 color: #454545;
             }
-            #sample13 {
+            #h1-sample13 {
                 background: linear-gradient(transparent 70%, #a7d6ff 70%);
             }
 
+            /*
+            ==========================
+                      button
+            ==========================
+            */
             .square_btn1{
                 display: inline-block;
                 padding: 0.5em 1em;
@@ -131,6 +153,11 @@
                 border-bottom: none;
             }
 
+            /*
+            ==========================
+                    MyStyle
+            ==========================
+            */
             .my-blockquote-01 {
                 padding: 10px;
                 margin: 1em 0;
@@ -161,8 +188,6 @@
                 background-color: #FFCCCC; 
             }
 
-
-
         </style>
 
         <!--
@@ -180,19 +205,34 @@
             <div>
                 <a href="https://saruwakakun.com/html-css/reference/css-sample">色々</a>
             </div>
+
             <div>
-                <h1 id="sample01">h1要素の見出しサンプル1</h1>
-                <h1 id="sample02">h1要素の見出しサンプル2</h1>
-                <h1 id="sample03">h1要素の見出しサンプル3</h1>
-                <h1 id="sample04">h1要素の見出しサンプル4</h1>
-                <h1 id="sample05">h1要素の見出しサンプル5</h1>
-                <h1 id="sample06">h1要素の見出しサンプル6</h1>
-                <h1 id="sample11">h1要素の見出しサンプル11</h1>
-                <h1 id="sample12">h1要素の見出しサンプル12</h1>
-                <h1 id="sample13">h1要素の見出しサンプル13</h1>
+                <hr id="hr-sample01">
+            </div>
+
+            <!--
+            ==========================
+                      h1
+            ==========================
+            -->
+            <div>
+                <h1 id="h1-sample01">h1要素の見出しサンプル1</h1>
+                <h1 id="h1-sample02">h1要素の見出しサンプル2</h1>
+                <h1 id="h1-sample03">h1要素の見出しサンプル3</h1>
+                <h1 id="h1-sample04">h1要素の見出しサンプル4</h1>
+                <h1 id="h1-sample05">h1要素の見出しサンプル5</h1>
+                <h1 id="h1-sample06">h1要素の見出しサンプル6</h1>
+                <h1 id="h1-sample11">h1要素の見出しサンプル11</h1>
+                <h1 id="h1-sample12">h1要素の見出しサンプル12</h1>
+                <h1 id="h1-sample13">h1要素の見出しサンプル13</h1>
                 <a href="https://saruwakakun.com/html-css/reference/h-design">参考</a>
             </div>
 
+            <!--
+            ==========================
+                     button
+            ==========================
+            -->
             <div>
                 <a href="#" class="square_btn1">BUTTON1</a>
                 <a href="#" class="square_btn2">BUTTON2</a>
@@ -200,6 +240,11 @@
                 <a href="#" class="btn4">BUTTON</a>
             </div>
 
+            <!--
+            ==========================
+                    MyStyle
+            ==========================
+            -->
             <div>
                 <blockquote class="my-blockquote-01">
                 <p>blockquote</p>
