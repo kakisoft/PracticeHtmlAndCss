@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*
+フォントは、優先度が高いものから複数指定する。
+
+sans-serif（総称フォント）：ブラウザがいい感じに選んでね。
+*/
+body {
+  font-family: Verdana, 'Arial Black', メイリオ, sans-serif;
+}
+
+h1 {
+    color: red;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: line-through;
+  }
+  
+  p {
+    font-weight: bold;
+    text-align: right;
+    text-decoration: underline;
+  }
+  
+  a {
+    text-decoration: none;
+  }
