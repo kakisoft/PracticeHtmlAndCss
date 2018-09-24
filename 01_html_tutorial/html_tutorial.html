@@ -12,8 +12,22 @@
         </style>
         -->
         <link rel="stylesheet" href="resources/mystyle.css">
+        <style>
+            .my-h-01{
+                background-color: #FF4500;
+                color: #FFFFFF;
+                border-radius: 10px; 
+                padding-left: 20px;
+            }            
+        </style>
     </head>
     <body>
+
+<!--
+=====================================================
+
+=====================================================
+-->
 <!--
 header：
 footer：
@@ -25,14 +39,19 @@ h1 - h6：見出し
 -->
 
 <header>
-    おいしいごはん
+    【header】おいしいごはん
     <nav>
-        - ホーム
+        - 【nav】ホーム
         - このサイトについて
         - プロフィール
     </nav>
 </header>
 
+<!--
+=====================================================
+
+=====================================================
+-->
 <!--
 p：パラグラフ。段落。
 hr：Horizontial Rule。水平線。
@@ -40,30 +59,38 @@ pre：プリフォーマットテキスト。改行や字下げを保持。
 blockquote：引用
 div：スタイリング目的でグループ化。
 -->
-
 <section>
-    <h1>今月のおいしいごはん</h1>
+    <h1>【h1】 今月のおいしいごはん</h1>
     <article>
-        <h2>おいしいごはん　#12</h2>
+        <h2>【h2】  おいしいごはん　#12</h2>
         <!-- altは、読み上げ時に有効となるそうな。 -->
+        <p>img src="resources/img_sample01.jpg"</p>
         <p><img src="resources/img_sample01.jpg" width="150" alt="ブラウザが画像を表示できない時の代替情報"></p>
-        <p><img src="resources/img_sample02.jpg" width="150" style="border:solid 3px #000000"></p> <!-- 枠線 -->
+        <p>alt="ブラウザが画像を表示できない時の代替情報"。</p>
+        <p><img src="resources/img_sample02.jpg" width="150" style="border:solid 15px #000000"></p> <!-- 枠線 -->
+
         <div style="background-color:greenyellow;">
-            <p>至高のTKG</p>
+            <p>一部の背景色を変更。</p>
             <hr>
-            <p>ところであの件は・・・？</p>
+            <p>div style="background-color:greenyellow;"</p>
         </div>
         <pre>
-            aaaa
-               bbb
-                 ccc
+            pre
+               を使うと
+                 そのまま出力
         </pre>
         <blockquote>
-            TKG最高  by kaki
+            【blockquote】引用　　TKG最高
         </blockquote>
     </article>
 </section>
 
+<!--
+=====================================================
+                      ol/ul/li
+=====================================================
+-->
+<h1 class="my-h-01">ol/ul/li</h1>
 <!--
 ol(orderd list)/ul(unorderd list)/li(list item)
 dl(definition list)/dt(definition term)/dd(definition discription)
@@ -74,22 +101,22 @@ br：改行。line break
 span：タグそのものに意味は無い。
 -->
 <section>
-    <h1>新着のおいしいごはん</h1>
+    <h1>h1 タグ</h1>
     <article>
-        <h2>おいしいごはん　#32</h2>
-        <strong>洋風<br>肉じゃが</strong>
-        <a href="#procedure">→手順</a><!-- ページ内リンク -->
-        <h2>材料</h2>        
+        <h2>h2　#32</h2>
+        <strong>【string】洋風<br>肉じゃが</strong>
+        <a href="#procedure">→【ページ内リンク：a href="#procedure"】手順</a><!-- ページ内リンク -->
+        <h2>【ul】  材料</h2>
         <ul>
-            <li><span style="color:blueviolet">じゃがいも</span></li>
+            <li><span style="color:blueviolet">【li】  じゃがいも</span></li>
             <!-- targetを付けると、リンクを別タブで開く。 -->
-            <li><a href="http://ninjin.com" target="_blank">にんじん</a></li>
-            <li><a href="css_ tutorial.html">たまねぎ</a></li>
+            <li><a href="http://ninjin.com" target="_blank">【li】  【targetを付けるとリンクが別タグで開く】href="http://ninjin.com" target="_blank"　　にんじん</a></li>
+            <li><a href="css_ tutorial.html">【li】  たまねぎ</a></li>
         </ul>
-        <h2 id="procedure">手順</h2>        
+        <h2 id="procedure">【ol】 手順</h2>
         <ol>
-            <li>炒める</li>
-            <li>まぜる</li>
+            <li>【li】  炒める</li>
+            <li>【li】  まぜる</li>
         </ol>
     
     </article>
@@ -99,6 +126,12 @@ span：タグそのものに意味は無い。
     </article>
 </section>
 
+<!--
+=====================================================
+                      p タグ
+=====================================================
+-->
+<h1 class="my-h-01">p タグ</h1>
 <section>
 <!--
 グローバル属性
@@ -106,12 +139,19 @@ span：タグそのものに意味は無い。
 　class：複数ある要素（複数保有できる）
 　style：スタールを直接指定
 -->
-    <p id="message">Hello World</p>
-    <p class="message">Hello World</p>
-    <p class="message active">Hello World</p>
-    <p class="message" style="background-color:darksalmon;">Hello World</p>
+    <p id="message">【p id="message" World】</p>
+    <p class="message">【class="message"】</p>
+    <p class="message active">【class="message active"】</p>
+    <p class="message" style="background-color:darksalmon;">【class="message" style="background-color:darksalmon;】</p>
 </section>
 
+
+<!--
+=====================================================
+                      table
+=====================================================
+-->
+<h1 class="my-h-01">table</h1>
 <!--
 table
 thead
@@ -145,6 +185,12 @@ td：table data
 </article>
 
 
+<!--
+=====================================================
+                      input type
+=====================================================
+-->
+<h1 class="my-h-01">input type</h1>
 <!--
 form
 　　action：フォームに入力されたデータを、どこに送るか
@@ -192,7 +238,7 @@ input
         </p>
         <p>
             職業：
-            <input type="text" name="email" size="100" placeholder="please input your job. うっすら背景に出る文字。対応していないブラウザもある。">
+            <input type="text" name="email" size="100" placeholder="【placeholder】please input your job. うっすら背景に出る文字。対応していないブラウザもある。">
         </p>
         <p>
             住所：
@@ -215,30 +261,30 @@ input
             </select>
         </p>
         <p>
-            メールアドレス：
+            メールアドレス形式（HTML5 から）：
             <input type="email" name="email" required>  <!-- required：必須入力 -->
         </p>                                            <!-- formタグに、novalidateを付けると、必須入力チェックを無効化できる。 -->
         <p>
-            料金：
+            料金【number】( ▲▼で増減できる）：
             <input type="number" name="number">
         </p>
         <p>
-            誕生日：
+            誕生日【date】：
             <input type="date" name="birthday">
         </p>
         <p>
-            コメント：
+            コメント【textarea】：
             <textarea cols="40" ros="5">コメント</textarea>
         </p>
         <p>
-            パスワード：
+            パスワード【password】：
             <input type="password" name="password">
         </p>
         <p>
-            <button type="button">何らかの処理</button>
+            <button type="button">何らかの処理【button】</button>
         </p>
         <p>
-            <input type="submit" value="送信" disabled><!-- disabled：無効化 -->
+            <input type="submit" value="送信【submit】" disabled><!-- disabled：無効化 -->
         </p>
         <p>
             <button type="submit"><strong style="background-color:greenyellow;">送信ボタンに装飾する場合！</strong></button>
@@ -251,11 +297,17 @@ input
             <ruby>
                 漢 <rt>Kan</rt>
                 字 <rt>ji</rt>
-              </ruby>
+            </ruby>
         </p>
     </form>
 </article>
 
+<!--
+=====================================================
+                      特殊記号
+=====================================================
+-->
+<h1 class="my-h-01">特殊記号</h1>
 <article>
 <!--
 　　　　文字実態参照　　　数値文字参照
@@ -273,7 +325,14 @@ input
         &quot;                  <br />
         &amp;                   <br />
     </dev>
-    
+
+
+<!--
+=====================================================
+                      
+=====================================================
+-->
+<h1 class="my-h-01">&nbsp;</h1>
 <!--
 タグ
     カテゴリ：どの分類か？
@@ -303,12 +362,26 @@ input
     </dev>
 <article>
 
+<!--
+=====================================================
+                      aside
+=====================================================
+-->
+<h1 class="my-h-01">aside</h1>
+
 <aside>
     <h1>おすすめレシピ本</h1>
     - Book1
     - Book2
     - Book3
 </aside>
+
+<!--
+=====================================================
+                      footer
+=====================================================
+-->
+<h1 class="my-h-01">footer</h1>
 
 <footer>
 @kakisoft 2017
