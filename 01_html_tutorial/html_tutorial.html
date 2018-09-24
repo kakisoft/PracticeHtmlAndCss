@@ -110,19 +110,53 @@ span：タグそのものに意味は無い。
         <ul>
             <li><span style="color:blueviolet">【li】  じゃがいも</span></li>
             <!-- targetを付けると、リンクを別タブで開く。 -->
-            <li><a href="http://ninjin.com" target="_blank">【li】  【targetを付けるとリンクが別タグで開く】href="http://ninjin.com" target="_blank"　　にんじん</a></li>
-            <li><a href="css_ tutorial.html">【li】  たまねぎ</a></li>
+            <li><a href="https://www.google.co.jp" target="_blank">【li】  外部リンク【targetを付けるとリンクが別タグで開く】href="http://ninjin.com" target="_blank"　　にんじん</a></li>
+            <li><a href="css_ tutorial.html">【li】  （a href="css_ tutorial.html）内部リンク</a></li>
         </ul>
+
+
         <h2 id="procedure">【ol】 手順</h2>
         <ol>
             <li>【li】  炒める</li>
             <li>【li】  まぜる</li>
         </ol>
-    
-    </article>
-    <article>
-        <h2>おいしいごはん　#31</h2>
-        スリランカカレー
+
+
+        <h2>【ol reversed start="10"】</h2>        
+        <ol reversed start="10">
+            <li>【li】</li>
+            <li>（逆順）</li>
+            <li>（開始番号が 10）</li>
+        </ol>
+
+
+        <h2>＜入れ子＞</h2>
+        <ul>
+          <li>
+            HTML入門
+            <ul>
+              <li>基礎文法</li>
+              <li>実例</li>
+            </ul>
+          </li>
+          <li>CSS入門</li>
+          <li>JavaScript入門</li>
+        </ul>
+
+
+        <h2>【dl/dt/dd】　よくある質問</h2>
+        <dl>
+          <dt>【dl  dt】質問1</dt>
+          <dd>【dd】　回答1</dd>
+      
+          <dt>【dt】　質問2</dt>
+          <dd>【dd】　回答2-1</dd>
+          <dd>【dd】　回答2-2</dd>
+      
+          <dt>質問3-1</dt>
+          <dt>質問3-2</dt>
+          <dd>回答3</dd>
+        </dl>        
     </article>
 </section>
 
@@ -143,6 +177,14 @@ span：タグそのものに意味は無い。
     <p class="message">【class="message"】</p>
     <p class="message active">【class="message active"】</p>
     <p class="message" style="background-color:darksalmon;">【class="message" style="background-color:darksalmon;】</p>
+
+    <p>
+        <!-- ルビ -->
+        <ruby>
+            漢 <rt>Kan</rt>
+            字 <rt>ji</rt>
+        </ruby>
+    </p>    
 </section>
 
 
@@ -161,15 +203,15 @@ th：table header（見出し）
 td：table data
 -->
 <article>
-    <table>
+    <table border="3">
         <thead>
             <tr>
-                <th>Size</th><th>Price</th>
+                <th>【thead】tr</th><th>th</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>S</td><td>150</td>
+                <td>tbody  tr</td><td>td</td>
             </tr>
             <tr>
                 <td>M</td><td>180</td>
@@ -178,7 +220,7 @@ td：table data
                 <td>L</td><td>210</td>
             </tr>
             <tr>
-                <td colspan="2">free for Kids!</td>
+                <td colspan="2">【td colspan="2"】free for Kids!</td>
             </tr>
         </tbody>
     </table>
@@ -290,14 +332,7 @@ input
             <button type="submit"><strong style="background-color:greenyellow;">送信ボタンに装飾する場合！</strong></button>
         </p>
         <p>
-            <input type="hidden" name="user_id" value="abcde">
-        </p>
-        <p>
-            <!-- ルビ -->
-            <ruby>
-                漢 <rt>Kan</rt>
-                字 <rt>ji</rt>
-            </ruby>
+            <input type="hidden" name="user_id" value="abcde">hidden
         </p>
     </form>
 </article>
@@ -320,19 +355,50 @@ input
 &ensp;    「n」の文字と同じ幅のスペース
 &emsp;    「m」の文字と同じ幅のスペース
 -->
-    <dev>
-        &lt;    　　　　&#60;    <br />
-        &quot;                  <br />
-        &amp;                   <br />
-    </dev>
-
-
+    <table border="3">
+        <thead>
+            <tr>
+                <th>出力内容</th>
+                <th>記号</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;</td>
+                <td>& lt;</td>
+            </tr>
+            <tr>
+                <td>&#60;</td>
+                <td>& #60;</td>
+            </tr>
+            <tr>
+                <td>&quot;</td>
+                <td>& quot;</td>
+            </tr>
+            <tr>
+                <td>&amp;</td>
+                <td>& amp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>& nbsp;　　半角スペース</td>
+            </tr>
+            <tr>
+                <td>&ensp;</td>
+                <td>& ensp;　　「n」の文字と同じ幅のスペース</td>
+            </tr>
+            <tr>
+                <td>&emsp;</td>
+                <td>& emsp;　　「m」の文字と同じ幅のスペース</td>
+            </tr>
+        </tbody>
+    </table>            
 <!--
 =====================================================
-                      
+                  タグの種類（カテゴリ）
 =====================================================
 -->
-<h1 class="my-h-01">&nbsp;</h1>
+<h1 class="my-h-01">タグの種類（カテゴリ）</h1>
 <!--
 タグ
     カテゴリ：どの分類か？
@@ -343,20 +409,20 @@ input
         <a href="https://www.w3.org/TR/html5/">W3c公式サイト</a><br />
         h1タグの場合→<a href="https://www.w3.org/TR/html5/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements">こちら</a>
         <p>
-            Categories:<br />
+            Categories（カテゴリ：どの分類か？）:<br />
             　　Flow content.<br />
             　　Heading content.<br />
             　　Palpable content.<br />
             ・・・というカテゴリに所属している。
         </p>
         <p>
-            Content model:<br />
+            Content model（コンテンツモデル：どのカテゴリのタグを入れられるか）:<br />
             　　Phrasing content. <br />
 　　　　　　・・・h1に入れていいのは、Phrasing content に所属するタグのみ。
         </p>
 
         <h3>
-            <a>トランスペアレント。h3の要素を使う。(なので、sectionとかはここでは使えない。)</a>
+            <a>トランスペアレント（親要素のコンテンツモデルを使ってね）。h3の要素を使う。(なので、sectionとかはここでは使えない。)</a>
         </h1>
 
     </dev>
@@ -370,7 +436,7 @@ input
 <h1 class="my-h-01">aside</h1>
 
 <aside>
-    <h1>おすすめレシピ本</h1>
+    <h1>【aside】【h1】  おすすめレシピ本</h1>
     - Book1
     - Book2
     - Book3
