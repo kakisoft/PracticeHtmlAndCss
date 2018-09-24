@@ -341,7 +341,7 @@ div#ctg8 {
 div#ctg9 > ul {
     list-style-type: lower-roman;
     list-style-position: inside;
-    list-style: url("shrimp_mini.png");
+    list-style: url("./resources/shrimp_mini.png");
 }
 
 /* 
@@ -357,7 +357,7 @@ div#ctg9 > ul {
     cursor: pointer;
 }
 .shrimp {
-    cursor: url("shrimp_mini.png"), auto;
+    cursor: url("./resources/shrimp_mini.png"), auto;
 }
 
 /*
@@ -365,7 +365,7 @@ div#ctg9 > ul {
 */
 body {
     background-color: rgb(241, 226, 226);
-    background-image: url("shrimp.png");
+    background-image: url("./resources/shrimp.png");
     background-repeat: no-repeat; /* 1回だけ表示 */
     /* background-repeat: repeat-x; */ /* X方向だけ繰り返し表示 */
     background-position: top center;
@@ -375,7 +375,7 @@ body {
 }
 /*
 以下のようにまとめて書くこともできる。順不同。
-body { background: url("shrimp.png") no-repeat top center }
+body { background: url("./resources/shrimp.png") no-repeat top center }
 */
 
 /*
