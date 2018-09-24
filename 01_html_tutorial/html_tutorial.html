@@ -25,26 +25,29 @@
 
 <!--
 =====================================================
-
+               コンテンツセクショニング
 =====================================================
 -->
 <!--
-header：
-footer：
+header：導入的なコンテンツ
+footer：著作者の情報、連絡先など
 nav：ナビゲーション（グローバルメニュー、サイドメニュー、パンくずリスト）。クローラに向けて、どんなメニューがあるか発信する内容？
-article：独立しているコンテンツ
-aside：メインでない、副次的なコンテンツ（広告とか）
-section：それ以外の情報のかたまり。
+article：配信や再利用を意図した、独立しているコンテンツ。
+aside：メインでない、副次的なコンテンツ（広告とか）。本文とは関係の薄いコンテンツ。
+section：それ以外の、意味のある情報のかたまり。
 h1 - h6：見出し
 -->
 
 <header>
-    【header】おいしいごはん   <b><a target="_blank" href="https://developer.mozilla.org/ja/docs/Web/HTML/Element">MDN：HTMLリファレンス</a></b>
+    【header】コンテンツセクショニング　　おいしいごはん
     <nav>
-        - 【nav】ホーム
-        - このサイトについて
-        - プロフィール
-    </nav>
+      <ul>
+        <li>【nav】  li</li>
+        <li><b><a target="_blank" href="https://developer.mozilla.org/ja/docs/Web/HTML/Element">MDN：HTMLリファレンス</a></b></li>
+        <li><a href="#about">サイトの特徴</a></li>
+        <li><a href="#ranking">人気ランキング</a></li>
+      </ul>
+    </nav>    
 </header>
 
 <!--
@@ -259,14 +262,20 @@ input
 -->
  
 <article>
-    <h1>アンケート</h1>
+    <h1>フォーム</h1>
     <form action="target.php" method="post">
+        <label>【label】右のテキストボックスと紐付け<input type="text"></label>
+        <br>
+        <label for="name">【label】離れた位置と紐付け</label>
+        <br>
+        <br>
+        <input type="text" id="name" value="離れた位置">
         <p>
             名前：
             <input type="text" name="email" size="50" maxlength="15" value="初期値">
         </p>
         <p>
-            Phone：
+            【checkbox】Phone：
             <label><!-- checkboxタグに対応するテキスト等をクリックしても on/offが切り替えできるようにする。 -->
                 <input type="checkbox" name="phone" value="Android">Android
             </label>
@@ -276,16 +285,16 @@ input
                 </label><!-- labelと関連付けるオブジェクトが離れている場合。idを指定する。 -->
         </p>
         <p>
-            color：
+            【radio button】color：
             <input type="radio" name="color" value="Android"  checked>Red <!-- checked：初期選択 -->
             <input type="radio" name="color" value="Blue">Blue
         </p>
         <p>
-            職業：
+            【email】職業：
             <input type="text" name="email" size="100" placeholder="【placeholder】please input your job. うっすら背景に出る文字。対応していないブラウザもある。">
         </p>
         <p>
-            住所：
+            【select box】住所：
             <select name="city">
                 <option value="Tokyo">Tokyo</option>
                 <option value="Nagoya">Nagoya</option>
@@ -296,7 +305,7 @@ input
         </p>
         <p>
             multi select：
-            <select name="sel2" multiple size="5"><!-- 複数選択 -->
+            <select name="sel2" multiple size="5"><!-- 複数選択：一度に表示できる数をsizeで指定 -->
                 <option value="value1">value1</option>
                 <option value="value2">value2</option>
                 <option value="value3">value3</option>
@@ -318,7 +327,7 @@ input
         </p>
         <p>
             コメント【textarea】：
-            <textarea cols="40" ros="5">コメント</textarea>
+            <textarea cols="70" ros="15">コメント</textarea>
         </p>
         <p>
             パスワード【password】：
@@ -326,6 +335,9 @@ input
         </p>
         <p>
             <button type="button">何らかの処理【button】</button>
+        </p>
+        <p>
+            <button>buttonタグ（コンテンツに画像や、別のタグを入れることができる）</button>
         </p>
         <p>
             <input type="submit" value="送信【submit】" disabled><!-- disabled：無効化 -->
@@ -336,6 +348,23 @@ input
         <p>
             <input type="hidden" name="user_id" value="abcde">hidden
         </p>
+
+
+        <fieldset>
+            <legend>【fieldset　　legend】  お使いのスマホ（複数選択可）</legend>
+            <input type="checkbox" id="android" checked> <label for="android">Android</label>
+            <input type="checkbox" id="iphone"> <label for="iphone">iPhone</label>
+            <input type="checkbox" id="other"> <label for="other">その他</label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>【fieldset　　legend】  一番好きなスポーツ</legend>
+            <input type="radio" name="sports" id="baseball" checked> <label for="android">野球</label>
+            <input type="radio" name="sports" id="footbool"> <label for="iphone">サッカー</label>
+            <input type="radio" name="sports" id="other2"> <label for="other">その他</label>
+        </fieldset>
+
     </form>
 </article>
 
