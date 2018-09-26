@@ -13,6 +13,7 @@
 
 
 【 a タグで submit 】
-<a href="javascript:document.my_form_01.submit()" >【a タグで submit】</a>
+<a href="javascript:document.forms[0].submit()" >【a タグで submit】</a>
+
 
 ```
