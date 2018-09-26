@@ -1,5 +1,18 @@
 ```html
+
+【 buttonは、typeを指定しない場合、submit扱い。だから、"history.back()" が動かなかったり。 】
 <button onclick="javascript:history.back()" >buttonは、typeを指定しない場合、submit扱い。だから、"history.back()" が動かなかったり。</button>
+
+
+【 button type="button" 】
 <button type="button" onclick="history.back()" >戻るbutton</button>
+
+
+【 input type="button" 】
 <input type="button" onclick="history.back()" value="戻る" >
+
+
+【 a タグで submit 】
+<a href="javascript:document.my_form_01.submit()" >【a タグで submit】</a>
+
 ```
