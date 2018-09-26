@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+p#ctg01 {
+    background-color: rgb(155,10,50);
+}
+
+p#ctg02 {
+  background-color:#ff0000;
+}
+
+p#ctg03 {
+  background-color:hsl(0, 50%, 50%);
+}
+
+p#ctg04 {
+  background-color: rgba(255,0,0,0.3);
+}
+
+p#ctg05 {
+  background-color: hsla(0,50%,50%,0.3);
+}
+
+p#ctg06 {
+  background-color:#ff0000;
+  opacity: 0.3;
+  color: black;
+  font-size: 5em;
+}
+
