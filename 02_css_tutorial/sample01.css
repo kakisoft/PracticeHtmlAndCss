@@ -15,14 +15,14 @@ h1 {
     font-weight: normal;
     text-align: center;
     text-decoration: line-through;
-  }
-  
-  p {
-    font-weight: bold;
-    text-align: right;
-    text-decoration: underline;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+}
+
+p {
+  font-weight: bold;
+  text-align: right;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
