@@ -14,6 +14,9 @@ https://kakisoft.github.io/PracticeHtmlAndCss/01_html_tutorial/html_tutorial.htm
 
 ### cssのチュートリアル
 https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/css_tutorial.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample01.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample02.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample03.html  
 
 ### css3のチュートリアル
 https://kakisoft.github.io/PracticeHtmlAndCss/03_css3_tutorial/css3_tutorial.html  
