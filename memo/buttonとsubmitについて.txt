@@ -16,4 +16,7 @@
 <a href="javascript:document.forms[0].submit()" >【a タグで submit】</a>
 
 
+【 buttonでリンク 】
+<input type="button" onclick="location.href='https://www.google.co.jp/'" value="リンク文字">
+
 ```
