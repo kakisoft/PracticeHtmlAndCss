@@ -32,20 +32,31 @@ div.ctg06 {
 
 .ctg07 {
   background-color: orange;
-  width: 200px;
-  height: 200px;
+  width: 530px;
+  height: 300px;
+  text-align: right;
+  padding-right: 1em;
 }
 
 .ctg08 {
   background-color: skyblue;
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 11.4em;
   border: 2px solid blue;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .ctg09 {
   background-color: tomato;
+  padding-top: 20px;
+  padding-left: 40px;  
+  margin: 0 0 20px;
+  width: 15em;
+  height: 18em;  
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
 }
 
 .ctg10 {
@@ -54,7 +65,25 @@ div.ctg06 {
   border-style: solid;
   border-color: blue;
   border-bottom: none;
+  margin-bottom: 20px;
 }
+
+.ctg11 {
+  background-color: rgb(155, 234, 240);
+  display: inline;
+}
+
+.ctg12 {
+  background-color: tomato;
+  display: inline-block;
+}
+
+.ctg13 {
+  background-color: tomato;
+  display: none;
+}
+
+
 
 
 </style>
@@ -100,14 +129,70 @@ div.ctg06 {
   <hr>
 
   <div class="ctg07">
-    <!-- Box 1 -->
-    <div class="ctg08">Box 2 Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello </div>
-    Box1
-  </div>
-  <div class="ctg09">Box 3</div> 
+    <div class="ctg08">
+      【 ctg08 】<br>
+      background-color: skyblue;<br>
+      width: 60%;<br>
+      height: 11.4em;<br>
+      border: 2px solid blue;<br>
+      border-radius: 10px;<br>
+      overflow: hidden;<br>
+      　hiddenだと、溢れた文字は隠れる。
+    </div>
 
-  <div class="ctg10">Box 3</div> 
+    【 ctg07 】<br>
+    background-color: orange;<br>
+    width: 530px;<br>
+    height: 300px;<br>
+    text-align: right;<br>
+    padding-right: 1em;<br>
+    　overflow を指定しない場合、デフォルトでは、はみ出す。
+    </div>
+  <div class="ctg09">
+    【 ctg09 】<br>
+    background-color: tomato;<br>
+    padding-top: 20px;<br>
+    padding-left: 40px;<br>
+    margin: 0 0 20px;<br>
+    width: 10em;<br>
+    height: 5em;<br>
+    margin-left: auto;<br>
+    margin-right: auto;<br>
+    　「margin-left: auto; margin-right: auto;」で中央揃え。<br>
+    overflow: scroll;<br>
+    　scroll だと、スクロール可。
+  </div> 
 
+  <div class="ctg10">
+    background-color: yellow;<br>
+    border-width: 2px;<br>
+    border-style: solid;<br>
+    border-color: blue;<br>
+    border-bottom: none;<br>
+    margin-bottom: 20px;<br>
+  </div> 
+
+  <hr>
+
+  <div class="ctg11">
+    background-color: rgb(155, 234, 240);<br>
+    display: inline;
+  </div> 
+
+  <div class="ctg12">
+    background-color: rgb(155, 234, 240);<br>
+    display: inline-block;
+  </div> 
+
+  <hr>
+  <p>→</p>
+  background-color: rgb(155, 234, 240);<br>
+  display: none;
+  <div class="ctg13">
+    background-color: rgb(155, 234, 240);<br>
+    display: none;
+  </div> 
+  <hr>
 
 </body>
 </html>
