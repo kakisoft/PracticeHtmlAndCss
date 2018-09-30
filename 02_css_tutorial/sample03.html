@@ -76,6 +76,8 @@ div.ctg06 {
 .ctg12 {
   background-color: tomato;
   display: inline-block;
+  width: 350px;
+  height: 230px;  
 }
 
 .ctg13 {
@@ -176,12 +178,21 @@ div.ctg06 {
 
   <div class="ctg11">
     background-color: rgb(155, 234, 240);<br>
-    display: inline;
+    display: inline;<br>
+    　<br>
+    block には width と height が設定できるが、 inline には設定することができない。
   </div> 
+ 
+  <br><br>
 
   <div class="ctg12">
     background-color: rgb(155, 234, 240);<br>
-    display: inline-block;
+    display: inline-block;<br>
+    width: 350px;<br>
+    height: 230px;<br>  
+    <br>
+    ただし、display: inline-block; という値を使うと <br>
+    inline のように左に詰めて配置されつつも、 width と height を設定できる。
   </div> 
 
   <hr>
