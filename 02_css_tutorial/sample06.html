@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>CSSの練習</title>
+<style>
+
+.normalsize {
+  width: 230px;
+  height: 230px;
+}
+
+.ctg19 {
+  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.ctg20 {
+  z-index: 1;
+  background-color: skyblue;
+  position: absolute;
+  padding-left: 5em;
+  top: 30px;
+  left: 160px;
+}
+
+.ctg21 {
+  background-color: tomato;
+  position: absolute;
+  padding-top: 15em;
+  top: 60px;
+  left: 60px;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="normalsize ctg19">
+    z-index: 2;<br>
+    background-color: orange;<br>
+    position: absolute;<br>
+    top: 0;<br>
+    left: 0;
+  </div>
+  <div class="normalsize ctg20">
+    z-index: 1;<br>
+    background-color: skyblue;<br>
+    position: absolute;<br>
+    padding-left: 5em;<br>
+    top: 30px;<br>
+    left: 160px;
+  </div>
+  <div class="normalsize ctg21">
+    background-color: tomato;<br>
+    position: absolute;<br>
+    padding-top: 5em;<br>
+    top: 60px;<br>
+    left: 60px;
+  </div>
+  
+</body>
+</html>
