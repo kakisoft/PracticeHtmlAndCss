@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>CSSの練習</title>
+<style>
+
+header {
+  height: 170px;
+  background-color: pink;
+  background-image: url(./resources/SeasideCat.png);
+  background-size: cover;
+  background-position: center;
+  /* background: center/cover pink url(./resources/SeasideCat.png); */
+}
+
+section {
+  border: 1px solid silver;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* .main > h1 {   */  /*  main の直下の h1        */
+/* .main h1 {     */  /*  main の中のすべての h1  */
+.main, h1 {           /*   main および h1         */
+  border-left: 5px solid skyblue;
+}
+
+p + p {
+  border-top: 1px dashed silver;
+  padding-top: 10px;
+}
+
+</style>
+</head>
+<body>
+  <header>
+  　　【 header 】<br>
+      height: 170px;<br>
+      background-color: pink;<br>
+      background-image: url(./resources/SeasideCat.png);<br>
+      background-size: cover;<br>
+      background-position: center;<br>
+      /* background: center/cover pink url(./resources/SeasideCat.png); */
+  </header>
+  <section class="main">
+    <h1>Title：border-left: 5px solid skyblue;</h1>
+    <p>contents</p>
+    <section>
+      【 section 】<br>
+      border: 1px solid silver;<br>
+      padding: 10px;<br>
+      margin-bottom: 10px;<br>
+      <h1>Title</h1>
+      <p>content 01</p>
+      <p>content 02</p>
+      <p>content 03</p>
+      <p>content 04</p>
+      <p>content 05</p>
+    </section>
+  </section>
+  <section class="sub">
+    <h1>Title</h1>
+    <p>contents</p>
+  </section>
+</body>
+</html>
