@@ -31,6 +31,22 @@ p + p {
   padding-top: 10px;
 }
 
+a[href="#"] {
+  font-weight: bold;
+}
+
+a[href^="https"] {
+  font-weight: bold;
+}
+
+a[href$="com"] {
+  font-weight: bold;
+}
+
+a[href*="kaki"] {
+  font-weight: bold;
+}
+
 </style>
 </head>
 <body>
@@ -61,7 +77,10 @@ p + p {
   </section>
   <section class="sub">
     <h1>Title</h1>
-    <p>contents</p>
+    <li><a href="#">TOP：a[href="#"] { font-weight: bold; }</a></li>
+    <li><a href="https://dotinstall.com">https://dotinstall.com　　前方一致　　a[href^="https"] { font-weight: bold; }</a></li>
+    <li><a href="mailto:taguchi@dotinstall.com">taguchi @ dotinstall　　後方一致　　a[href$="com"] { font-weight: bold; }</a></li>    
+    <li><a href="https://www.kakisoft.com">https://www.kakisoft.com　　部分一致　　a[href*="kaki"] { font-weight: bold; }</a></li>    
   </section>
 </body>
 </html>
