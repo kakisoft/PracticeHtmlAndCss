@@ -25,7 +25,22 @@
   background-color: tomato;  
 }
 
+.ctg25 {
+  background-color: orange;
+  box-shadow: 10px 5px rgba(0, 0, 0, .3);
+  text-shadow: 10px 5px rgba(0, 0, 0, .3);
+}
 
+.ctg26 {
+  background-color: skyblue;
+  box-shadow: 10px 5px 3px rgba(0, 0, 0, .3);
+  text-shadow: 10px 5px 3px rgba(0, 0, 0, .3);
+}
+
+.ctg27 {
+  background-color: tomato;
+  box-shadow: 10px 5px 3px 10px rgba(0, 0, 0, .3);
+}
 </style>
 </head>
 <body>
@@ -45,6 +60,27 @@
     background-color: tomato;<br>
     　　box-sizing: border-box;　を指定しない場合、<br>
     　　こんな感じで border の分だけはみ出る。
+  </div>
+
+  <hr>
+
+  <div class="normalsize ctg25">
+    background-color: orange;<br>
+    box-shadow: 10px 5px rgba(0, 0, 0, .3);<br>
+    text-shadow: 10px 5px rgba(0, 0, 0, .3);<br>
+    　　ぼかし<br>
+    　　テキストのぼかし
+  </div>
+  <div class="normalsize ctg26">
+    background-color: skyblue;<br>
+    box-shadow: 10px 5px 3px rgba(0, 0, 0, .3);<br>
+    text-shadow: 10px 5px 3px rgba(0, 0, 0, .3);<br>
+    　　　box-shadow の３番目の引数を設定すると、<br>
+    　　　ぼかし具合を設定できる。
+  </div>
+  <div class="normalsize ctg27">
+    background-color: tomato;<br>
+    box-shadow: 10px 5px 3px 10px rgba(0, 0, 0, .3);<br>
   </div>
 
 </body>
