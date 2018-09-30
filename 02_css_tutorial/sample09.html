@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>CSSの練習</title>
+<style>
+
+/* h1::before {
+  content: '- ';
+}
+
+h1::after {
+  content: ' -';
+} */
+
+h1::after {
+  content: attr(data-subtitle);
+}
+
+.ctg27::before {
+  content: '【 ';
+}
+
+.ctg27::after {
+  content: ' 】';
+}
+
+</style>
+</head>
+<body>
+  <section class="main">
+    .ctg27::after { content: '【 '; }<br>
+    .ctg27::after { content: '  】'; }
+    <h1 class="ctg27">Title</h1>
+
+    <hr>
+
+    h1::after { content: attr(data-subtitle); }<br>
+    data-subtitle=" - main title"
+    <h1 data-subtitle=" - main title">Title</h1>
+
+    data-subtitle=" - sub title"
+    <h1 data-subtitle=" - sub title">Title</h1>
+    <p>Contents</p>
+  </section>
+</body>
+</html>
