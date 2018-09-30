@@ -44,6 +44,42 @@ h1::after {
   cursor: pointer;
 }
 
+
+/* .main > p:nth-child(3) {
+  background-color: pink;
+} */
+
+/* .main > p:nth-child(3n) {
+  background-color: pink;
+} */
+
+/* .main > p:first-child {
+  background-color: pink;
+}
+.main > p:last-child {
+  background-color: skyblue;
+} */
+
+/* .main > p:not(:last-child) {
+  border-bottom: 1px dashed silver;
+} */
+
+.main > p:nth-child(odd) {
+  background-color: pink;
+}
+.main > p:nth-child(even) {
+  background-color: skyblue;
+}
+
+/* .submenu > p:nth-of-type(3n) {
+.submenu > p:nth-of-type(odd) {
+.submenu > p:nth-of-type(even) {
+.submenu > p:first-of-type {
+.submenu > p:last-of-type { */
+.submenu > p:nth-of-type(3) {
+  background-color: pink;
+}
+
 </style>
 </head>
 <body>
@@ -80,5 +116,40 @@ h1::after {
   </pre>
   <div id="open">Open Menu</div>
 
+  <hr>
+
+  <pre>
+    .main > p:nth-child(odd) { background-color: pink; }
+    .main > p:nth-child(even) { background-color: skyblue; }     
+  </pre>
+  <section class="main">
+    <p>content01</p>
+    <p>content02</p>
+    <p>content03</p>
+    <p>content04</p>
+    <p>content05</p>
+    <p>content06</p>
+    <p>content07</p>
+    <p>content08</p>
+  </section>  
+
+  <hr>
+
+  <pre>
+    .main > p:nth-child(odd) { background-color: pink; }
+    .main > p:nth-child(even) { background-color: skyblue; }     
+  </pre>
+  <section class="submenu">
+    <h1>Title01</h1>
+    <p>content01</p>
+    <h2>Title02</h2>    
+    <p>content02</p>
+    <p>content03</p>
+    <p>content04</p>
+    <p>content05</p>
+    <p>content06</p>
+    <p>content07</p>
+    <p>content08</p>
+  </section>    
 </body>
 </html>
