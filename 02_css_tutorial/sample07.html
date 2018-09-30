@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>CSSの練習</title>
+<style>
+
+.normalsize {
+  width: 510px;
+  height: 160px;
+}
+
+.ctg22 {
+  background-color: orange;  
+}
+
+.ctg23 {
+  box-sizing: border-box;
+  background-color: skyblue;
+  border: 20px solid blue;
+}
+
+.ctg24 {
+  border: 20px solid yellowgreen;
+  background-color: tomato;  
+}
+
+
+</style>
+</head>
+<body>
+
+  <div class="normalsize ctg22">
+    background-color: orange;
+  </div>
+  <div class="normalsize ctg23">
+    box-sizing: border-box;<br>
+    background-color: skyblue;<br>
+    border: 5px solid blue;<br>
+    　　box-sizing: border-box;　にしておくと、<br>
+    　　border や padding を含めて width と heightを計算する。
+  </div>
+  <div class="normalsize ctg24">
+    border: 5px solid yellowgreen;<br>
+    background-color: tomato;<br>
+    　　box-sizing: border-box;　を指定しない場合、<br>
+    　　こんな感じで border の分だけはみ出る。
+  </div>
+
+</body>
+</html>
