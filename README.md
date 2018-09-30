@@ -17,6 +17,10 @@ https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/css_tutorial.html
 https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample01.html  
 https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample02.html  
 https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample03.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample04.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample05.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample06.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample07.html  
 
 ### css3のチュートリアル
 https://kakisoft.github.io/PracticeHtmlAndCss/03_css3_tutorial/css3_tutorial.html  
