@@ -25,6 +25,25 @@ h1::after {
   content: ' 】';
 }
 
+/*
+疑似クラス
+- 要素の状態に基づいてスタイリング
+疑似要素
+- 要素の特定の部分をスタイリング
+*/
+
+#open {
+  width: 100px;
+  background-color: skyblue;
+  text-align: center;
+  padding: 4px 8px;
+}
+
+#open:hover { /* 疑似クラス */
+  opacity: .8;
+  cursor: pointer;
+}
+
 </style>
 </head>
 <body>
@@ -43,5 +62,23 @@ h1::after {
     <h1 data-subtitle=" - sub title">Title</h1>
     <p>Contents</p>
   </section>
+
+　<hr>
+
+  <pre>
+    #open {
+      width: 100px;
+      background-color: skyblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    
+    #open:hover { /* 疑似クラス */
+      opacity: .8;
+      cursor: pointer;
+    }    
+  </pre>
+  <div id="open">Open Menu</div>
+
 </body>
 </html>
