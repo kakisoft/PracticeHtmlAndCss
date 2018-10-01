@@ -20,3 +20,4 @@
 <input type="button" onclick="location.href='https://www.google.co.jp/'" value="リンク文字">
 
 ```
+
