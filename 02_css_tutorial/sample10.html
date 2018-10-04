@@ -1,1 +1,28 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>CSSの練習</title>
+<style>
+
+h1 { color: red !important; }
+h1#main.box { color: yellow !important; }
+#about > #main { color: gray; }
+section > #main.title { color: blue; }
+section#about > h1 { color: pink; }
+
+</style>
+</head>
+<body>
+  <pre>
+    タグに直接、「style="color:skyblue;"」と書くと、
+    詳細度にかかわらず、それが優先される。
+    「!important」を付けると、↑よりもさらに優先される。
+    !important が複数ある場合、後から書いた方が優先される。
+  </pre>
+  <section id="about">
+    <h1 id="main" class="title box" style="color:skyblue;">Main Title</h1>
+  </section>
+</body>
+</html>
