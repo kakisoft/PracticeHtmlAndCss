@@ -10,11 +10,12 @@ h1.ctg01, h2.ctg01, p.ctg01 {
   border: 1px solid silver;
 }
 
-img {
+img.ctg02 {
   float: right;
 }
 
-h2 {
+h2.ctg03 {
+  border: 2px solid #e61212;
   clear: right;
   /* clear: left;
   clear: both; */
@@ -23,9 +24,64 @@ h2 {
 </style>
 </head>
 <body>
+    【border: 1px solid silver;】
     <h1 class="ctg01">Title01</h1>
-    <p  class="ctg01"><img src="resources/kakisoft.png" width="100" height="100">content01 </p>
+    <p  class="ctg01">
+      <img class="" src="resources/kakisoft.png" width="100" height="100">
+      【pタグに、&lt;img src="resources/kakisoft.png" width="100" height="100"> を書いている。】（classの指定なし）その後に、コンテンツを記述。<br>
+      こうすると、画像が左に来て、こんな感じでテキストが回り込まれる。
+    </p>
     <h2 class="ctg01">Title02</h2>
     <p  class="ctg01">content02 </p>
-</body>
+
+    <hr size="20" color="#000000" noshade>
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━　-->
+
+    <p  class="ctg01">
+      <img class="ctg02" src="resources/kakisoft.png" width="100" height="100">
+      【pタグに、&lt;class="ctg02" src="resources/kakisoft.png" width="100" height="100">を書いている。】
+      その後に、コンテンツを記述うううううううううううううううううううううううううううううううううううううううう
+      ううううううううううううううううううううううううううううううううううううううううううううううううううううう
+      ううううううううううううううううううううううううううううううううううううううううううううう。<br><br>
+
+      ctg02 の内容は、<br>
+      　<b>float: right;</b>
+        <br><br>
+      こうすると、画像が右に来て、こんな感じでテキストが左に回り込むむむむむむむむむむむむむむむむむむむむむむむむ
+      むむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむ
+      むむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむ
+      むむむむむむむむむむむむむむむむむむむむむ。
+    </p>
+
+    <hr size="20" color="#000000" noshade>
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━　-->
+
+    <p  class="ctg01">
+      <img class="ctg02" src="resources/kakisoft.png" width="100" height="110" border=1>
+      float された要素は、通常の配置から外れるので続く行ボックスは画像がなかったかのように配置されている点にも注意してください。
+    </p>
+      
+    <h2 class="ctg01">【h2】 こんな感じで、h2タグのエリアに侵食。</h2>
+    <p  class="ctg01">【p】content02 </p>
+
+    <hr size="20" color="#000000" noshade>
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━　-->
+
+    <p  class="ctg01">
+        <img class="ctg02" src="resources/kakisoft.png" width="100" height="100" border=1>
+        ↑のようにしたくなければ、続く要素に、「clear」を付ける。
+    </p>
+      
+    <h2 class="ctg03" >【&lt;h2 class="ctg03">】こんな感じで、画像の下に要素が来る。（floatの下）</h2>
+    <p  class="ctg01">
+        ctg03 の内容は、<br>
+        　<b>float: right;</b>
+          <br><br>
+    </p>
+    <p>
+      floatをクリアする。<br>
+      「clear: left;」「clear: both;」もあるよ。
+    </p>
+      
+  </body>
 </html>
