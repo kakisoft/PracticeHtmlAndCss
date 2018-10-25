@@ -1,0 +1,27 @@
+
+
+＜必要なケース＞
+・ユーザーにアクセスさせる必要のあるページが重複してしまっている場合
+・サイズや色違いなどで異なるURLが存在し、サイズや色以外の内容が重複している場合
+・301リダイレクトの設定が出来ないサーバーを使用していて、URLの正規化を行いたい場合
+・PCサイト、スマホサイト、モバイルサイトの関係性を検索エンジンに伝えたい場合
+
+
+＜NG＞
+１．絶対 URL のつもりで相対 URL を記述してしまう
+２．<body>タグ内に rel=canonical を入れる。（検索エンジンに無視されるそうな。）
+３．複数ページにまたがるコンテンツの 1 ページ目を rel=canonical のリンク先とする
+４．異なるページに、同一内容の rel=canonical を記述している。
+５．同一ページに 2 つ以上記述している。
+６．カテゴリ ページまたはランディング ページで特集記事への rel=canonical リンクを指定する
+
+
+【 １．の補足 】
+NG：<link rel="canonical" href="example.com/cupcake.html">
+　　　　　⇒ http://やhttps://がついていない場合は、相対 URLとして判断される。
+
+OK：<link rel="canonical" href="/cupcake.html">
+OK：<link rel="canonical" href="http://example.com/cupcake.html">
+
+
+
