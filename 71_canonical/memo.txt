@@ -25,3 +25,17 @@ OK：<link rel="canonical" href="http://example.com/cupcake.html">
 
 
 
+＜その他＞
+head タグ直下ぐらいに書いた方がいいらしい。（タグ内で、優先順位が高い事を知らせるため）
+````
+（例）
+
+<head>
+<link rel="canonical" href="canonicalllllllll">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9" />
+　・
+　・
+````
+
