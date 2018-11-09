@@ -52,7 +52,17 @@
     <p>
         <button type="submit">送信</button>
     </p>
-</form>
+  </form>
+
+  <div>
+  <input type='hidden' name='prefectureSet[]' value="01">
+  <input type='hidden' name='prefectureSet[]' value="02">
+  <input type='hidden' name='prefectureSet[]' value="03">
+  
+   <p>$this->parameters = $_GET['prefectureSet'];</p>
+   <p>といった感じで、配列として受け取ることができる。</p>
+  </div>
+
 
     <div class="fdFt">
     <div class="ftPager">
