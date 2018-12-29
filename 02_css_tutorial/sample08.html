@@ -47,6 +47,15 @@ a[href*="kaki"] {
   font-weight: bold;
 }
 
+a.ctg01 {
+  text-decoration: none;
+  color: inherit;  
+}
+
+a.ctg01:hover {
+  color: royalblue;
+}
+
 </style>
 </head>
 <body>
@@ -76,11 +85,21 @@ a[href*="kaki"] {
     </section>
   </section>
   <section class="sub">
-    <h1>Title</h1>
+    <h1>Title01</h1>
     <li><a href="#">TOP：a[href="#"] { font-weight: bold; }</a></li>
     <li><a href="https://dotinstall.com">https://dotinstall.com　　前方一致　　a[href^="https"] { font-weight: bold; }</a></li>
     <li><a href="mailto:taguchi@dotinstall.com">taguchi @ dotinstall　　後方一致　　a[href$="com"] { font-weight: bold; }</a></li>    
     <li><a href="https://www.kakisoft.com">https://www.kakisoft.com　　部分一致　　a[href*="kaki"] { font-weight: bold; }</a></li>    
+  </section>
+  <section>
+    <h1>Title02</h1>
+    <div>
+      <a href="#" class="ctg01">
+        【text-decoration: none;】（リンクの下線を消す）<br>
+        【color: inherit;】（親要素の設定を強制的に引き継ぐ）<br>
+        【a.ctg01:hover { color: royalblue; }】（カーソルが乗った時のカラー）
+      </a>
+    </div>
   </section>
 </body>
 </html>
