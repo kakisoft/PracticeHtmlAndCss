@@ -9,24 +9,26 @@ ___________________________________________________________________
 # PracticeHtmlAndCss
 HtmlとCssに関するメモ
   
-### htmlのチュートリアル
-https://kakisoft.github.io/PracticeHtmlAndCss/01_html_tutorial/html_tutorial.html  
+## htmlのパーツ
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/html-parts01-basic.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/html-parts02-input-params.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/HTML5-parts01.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/mail.html  
 
-### cssのチュートリアル
-https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/css_tutorial.html  
-https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample01.html  
-https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample02.html  
-https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample03.html  
-https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample04.html  
-https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample05.html  
-https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample06.html  
-https://kakisoft.github.io/PracticeHtmlAndCss/02_css_tutorial/sample07.html  
 
-### css3のチュートリアル
-https://kakisoft.github.io/PracticeHtmlAndCss/03_css3_tutorial/css3_tutorial.html  
+## cssのパーツ
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/css_tutorial.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample02_p.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample03_ul_ol_li_div.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample04_position01.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample05_position02.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample06_z-index.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample07_box.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample08_layout_section.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample09_gijiClass.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample10_important.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample11_float.html  
 
-### css layout
-https://kakisoft.github.io/PracticeHtmlAndCss/04_css_layout_tutorial/css_layout_tutorial.html  
 
 ___________________________________________________________________
 ## ドットインストール：デザインのサンプル
