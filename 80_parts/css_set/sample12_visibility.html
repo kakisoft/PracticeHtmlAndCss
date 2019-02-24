@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>CSSの練習</title>
+<style>
+
+div#ctg01 {
+  visibility:hidden;
+}
+
+div#ctg02 {
+  display:none;
+}
+
+</style>
+</head>
+<body>
+  <pre>
+    visibility:hidden  要素はあるけど見えない状態。
+    display:none  要素も取得されず、完全にその場にない扱い。
+  </pre>
+
+<hr>
+&lt;div style="visibility:hidden">
+<div style="visibility:hidden">
+  <p>visibility:hidden</p>
+</div>
+<div id="ctg01">
+  <p>visibility:hidden</p>
+</div>
+<hr>
+
+&lt;div style="display:none">
+<div style="display:none">
+  <p>display:none</p>
+</div>
+<div id="ctg02">
+  <p>display:none</p>
+</div>
+<hr>
+
+</body>
+</html>
