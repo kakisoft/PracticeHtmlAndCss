@@ -7,19 +7,38 @@
 <body>
 
 <form>
+  <!-- ------------------------------------------------------------------------------ -->
   <input type="text" id="search_i_value_user_id" name="search_i_value_user_id" value="1" pattern="[0-9]{11}">
   <br><br><br>
   <label for="email"><span>(メールアドレス）</span></label>
   <input type="text" id="email" name="email" value="" aria-required="true" aria-invalid="true">
-  <br><br><br>
+  <br><br>
   
-  <input type="text" required><br><br><br>
-  <label>【required】<input type="text" required></label><br><br><br>
-  <label>【type="text" required  pattern="[a-zA-Z0-9_-]{6,12}"】<input id="username" type="text" pattern="[a-zA-Z0-9_-]{6,12}" autofocus required><br><br><br>
-  <label>【type="email"  required】<input type="email" required></label><br><br><br>
-  <label>【type="url"  required】<input type="url" required></label><br><br><br>
-  <label>【type="tel"  required】<input type="tel" required></label>※ザル<br><br><br>
+  <label>【required】<input type="text" required></label><br>
+  <label>【type="text" required  pattern="[a-zA-Z0-9_-]{6,12}"】<input id="username" type="text" pattern="[a-zA-Z0-9_-]{6,12}" autofocus required><br>
+  <label>【type="email"  required】<input type="email" required></label><br>
+  <label>【type="url"  required】<input type="url" required></label><br>
+  <label>【type="tel"  required】<input type="tel" required></label>※ザル<br>
   <input type="submit" value="Submit">
+
+  <!-- ------------------------------------------------------------------------------ -->
+  <hr size=10 color=#484040>
+
+  <label>【input type="search"】  <input type="search">        </label><br>
+  <label>【input type="tel"】     <input type="tel">           </label><br>
+  <label>【type="url"】           <input type="url">           </label><br>
+  <label>【type="email"】         <input type="email">         </label><br>
+  <label>【type="date"】          <input type="date" value="2010-01-20"></label><br>
+  <label>【type="datetime"】      <input type="datetime">      </label><br>
+  <label>【type="month"】         <input type="month">         </label><br>
+  <label>【type="week"】          <input type="week">          </label><br>
+  <label>【type="time"】          <input type="time">          </label><br>
+  <label>【type="datetime-local"】<input type="datetime-local"></label><br>
+  <label>【type="number"】        <input type="number" value=2></label><br>
+  
+  <br>
+  <input type="submit" value="Submit">
+  <!-- ------------------------------------------------------------------------------ -->
 
 </form> 
 
