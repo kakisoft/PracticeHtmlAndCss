@@ -28,6 +28,7 @@ https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample08_layout_s
 https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample09_gijiClass.html  
 https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample10_important.html  
 https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample11_float.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample12_visibility.html  
 
 
 ___________________________________________________________________
