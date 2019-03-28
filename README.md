@@ -17,6 +17,7 @@ https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/mail.html
 
 
 ## cssのパーツ
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/my_color_01.html  
 https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/css_tutorial.html  
 https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample02_p.html  
 https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample03_ul_ol_li_div.html  
