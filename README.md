@@ -31,6 +31,7 @@ https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample10_importan
 https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample11_float.html  
 https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample12_visibility.html  
 https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample13_table.html  
+https://kakisoft.github.io/PracticeHtmlAndCss/80_parts/css_set/sample14_FlexBox_01  
 
 
 ___________________________________________________________________
