@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>CSSの練習</title>
+<style>
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: rgb(190, 43, 43);
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+
+</style>
+</head>
+<body>
+    <div>
+        <button 
+            class="btn-square" 
+            value='{"pb_t_news_id":%pb_t_news_id%, "case_id":%case_id%}' 
+            name="link_case_info[]"
+            style="background: #E3E3E3; color:#000"
+         >
+         案件情報へ
+        </button>
+
+    </div>
+      
+</body>
+</html>
