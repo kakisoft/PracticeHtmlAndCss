@@ -8,6 +8,17 @@
 
 <form>
   <!-- ------------------------------------------------------------------------------ -->
+    <!-- 全角入力ができてしまう。 -->
+    <input type="text" pattern="\d*"/><br>
+    <input type="text" pattern="[0-9]*" maxlength="5"><br>
+
+    <!-- type="number" は maxlengthが効かない。 -->
+    <input type="number" pattern="[0-9]*" maxlength="5"><br>
+
+    <!-- 多分これが現実的。 -->
+    <input type="number" min="0" max="999" oninput="if(value.length>5)value=value.slice(0,5)"><br>
+
+  <!-- ------------------------------------------------------------------------------ -->
   <input type="text" id="search_i_value_user_id" name="search_i_value_user_id" value="1" pattern="[0-9]{11}">
   <br><br><br>
   <label for="email"><span>(メールアドレス）</span></label>
