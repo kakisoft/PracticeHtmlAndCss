@@ -1,0 +1,21 @@
+.container {
+    display: flex;  /* FlexBox を使うという宣言。親要素に付ける。（これが無い場合、div なら縦に並ぶ） */
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .box1 {
+    background: orange;
+    flex: 1;
+  }
+
+  .box2 {
+    background: skyblue;
+  }
+
+  .box3 {
+    background: tomato;
+  }
