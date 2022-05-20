@@ -19,4 +19,8 @@ ____________________________________________________________________
 https://favicon-generator.mintsu-dev.com/
 
 
+## The best Favicon Generator (completely free) - favicon.io
+https://favicon.io/
+
+
 
