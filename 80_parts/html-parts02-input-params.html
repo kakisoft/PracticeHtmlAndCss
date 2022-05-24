@@ -3,9 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>My Boiler Plate</title>
+  <style>
+    .my-h-02{ background-color: #4653e1; color: #FFFFFF; border-radius: 10px; padding-left: 20px; }
+</style>
 </head>
 <body>
 
+<!--
+=====================================================
+               select（セレクトメニュー）
+=====================================================
+-->
+  <h2 class="my-h-02">select（セレクトメニュー）</h2>
   <div id="app01">
     <select name="blood">
         <option value="A">A型</option>
@@ -15,27 +24,33 @@
     </select>
   </div>
 
+  <h3>【label 関連付け】</h3>
   <div>
-    <p>
-        <label for="language">言語を選択してください：</label>
-        <select id="language" name="language">
-        <option value="en">英語</option>
-        <option value="de">ドイツ語</option>
-        <option value="fr">フランス語</option>
-        <option value="ja" selected>日本語</option>
-        <option value="zh">中国語</option>
-        </select>
-        </p>
-        <p>
-        <label for="contact">ご希望の連絡方法（複数選択可）：</label>
-        <select id="contact" name="contact" multiple size="5">
+    <label for="language">言語を選択してください：</label>
+    <select id="language" name="language">
+      <option value="en">英語</option>
+      <option value="de">ドイツ語</option>
+      <option value="fr">フランス語</option>
+      <option value="ja" selected>日本語</option>
+      <option value="zh">中国語</option>
+    </select>
+  </div>
+
+<!--
+=====================================================
+              マルチセレクト（複数選択）
+=====================================================
+-->
+  <h2 class="my-h-02">マルチセレクト（複数選択）</h2>
+  <div>
+      <label for="contact">ご希望の連絡方法（複数選択可）：</label>
+      <select id="contact" name="contact" multiple size="5">
         <option value="email" selected>電子メール</option>
         <option value="tel" selected>電話</option>
         <option value="fax" selected>ファックス</option>
         <option value="postal" selected>郵便</option>
         <option value="office">ご来店時に係員より説明</option>
-        </select>
-    </p>      
+      </select>
   </div>
 
   <form action="sample-select-multiple.php" method="post" target="_blank">
@@ -62,27 +77,207 @@
    <p>$this->parameters = $_GET['prefectureSet'];</p>
    <p>といった感じで、配列として受け取ることができる。</p>
   </div>
+<!--
+=====================================================
+        datalist（セレクトメニュー＋フリー入力）
+=====================================================
+-->
+<h2 class="my-h-02">datalist（セレクトメニュー＋フリー入力）</h2>
+  <div>
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
 
-
-    <div class="fdFt">
-    <div class="ftPager">
-        <ul>
-            <li class="prev">
-                <a href="https://nnnnews.co.jp/article?a=20181018-001-soci&p=1" onmousedown="this.href='https://rrr'">前へ</a>
-            </li>
-            <li>
-                <a href="https://nnnnews.co.jp/article?a=20181018-001-soci&p=1" onmousedown="this.href='https://rrr'">1</a>
-            </li>
-            <li>
-                <span>2</span>
-            </li>
-              <li class="next">
-                <span>次へ</span>
-              </li>
-        </ul>
-        <p class="counter">2<span>/2ページ</span></p>
-    </div>
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
   </div>
+
+
+<!--
+=====================================================
+                      input type
+=====================================================
+-->
+<h2 class="my-h-02">input type</h2>
+<!--
+form
+　　action：フォームに入力されたデータを、どこに送るか
+　　method：get/post
+
+input
+　　text
+　　submit
+　　password
+　　hidden
+　　textarea
+　　button
+　　checkbox
+　　radio
+　　label：checkbox や radioと関連付ける。
+　　select：ドロップダウンリスト
+
+　　＜以下、html5より使用可。＞
+　　email
+　　number
+　　date
+-->
+ 
+<article>
+    <h1>フォーム</h1>
+    <form action="target.php" method="post">
+        <label>【label】右のテキストボックスと紐付け<input type="text"></label>
+        <br>
+        <label for="name">【label】離れた位置と紐付け</label>
+        <br>
+        <br>
+        <input type="text" id="name" value="離れた位置">
+        <p>
+            名前：
+            <input type="text" name="email" size="50" maxlength="15" value="初期値">
+        </p>
+        <p>
+            【checkbox】Phone：
+            <label><!-- checkboxタグに対応するテキスト等をクリックしても on/offが切り替えできるようにする。 -->
+                <input type="checkbox" name="phone" value="Android">Android
+            </label>
+            <input type="checkbox" name="phone" value="iPhone" id="iPhone" checked>
+                <label for="iPhone">
+                    iPhone
+                </label><!-- labelと関連付けるオブジェクトが離れている場合。idを指定する。 -->
+        </p>
+        <p>
+            【radio button】color：
+            <input type="radio" name="color" value="Android"  checked>Red <!-- checked：初期選択 -->
+            <input type="radio" name="color" value="Blue">Blue
+        </p>
+        <p>
+            【email】職業：
+            <input type="text" name="email" size="100" placeholder="【placeholder】please input your job. うっすら背景に出る文字。対応していないブラウザもある。">
+        </p>
+        <p>
+            【select box】住所：
+            <select name="city">
+                <option value="Tokyo">Tokyo</option>
+                <option value="Nagoya">Nagoya</option>
+                <option value="Osaka">Osaka</option>
+                <option value="Kyoto" selected>Kyoto</option><!-- 初期値 -->
+                <option value="Fukuoka">Fukuoka</option>
+            </select>
+        </p>
+        <p>
+            multi select：
+            <select name="sel2" multiple size="5"><!-- 複数選択：一度に表示できる数をsizeで指定 -->
+                <option value="value1">value1</option>
+                <option value="value2">value2</option>
+                <option value="value3">value3</option>
+                <option value="value4" selected>value4</option>
+                <option value="value5">value5</option>
+            </select>
+        </p>
+
+        <p>
+            optgroup：
+            <select>
+            <optgroup label="Group 1">
+                <option>Option 1.1</option>
+            </optgroup> 
+            <optgroup label="Group 2">
+                <option>Option 2.1</option>
+                <option>Option 2.2</option>
+            </optgroup>
+            <optgroup label="Group 3" disabled>
+                <option>Option 3.1</option>
+                <option>Option 3.2</option>
+                <option>Option 3.3</option>
+            </optgroup>
+            </select>    
+        </p>
+
+        <p>
+            メールアドレス形式（HTML5 から）：
+            <input type="email" name="email" required>  <!-- required：必須入力 -->
+        </p>                                            <!-- formタグに、novalidateを付けると、必須入力チェックを無効化できる。 -->
+        <p>
+            料金【number】( ▲▼で増減できる）：
+            <input type="number" name="number">
+        </p>
+        <p>
+            誕生日【date】：
+            <input type="date" name="birthday">
+        </p>
+        <p>
+            コメント【textarea】：
+            <textarea cols="70" ros="15">コメント</textarea>
+        </p>
+        <p>
+            パスワード【password】：
+            <input type="password" name="password">
+        </p>
+        <p>
+            <button type="button">何らかの処理（イベントを仕込んでいないので何も起きない）【button】</button>
+        </p>
+        <p>
+            <button>buttonタグ（コンテンツに画像や、別のタグを入れることができる）</button>
+        </p>
+        <p>
+            <input type="submit" value="送信【submit】" disabled><!-- disabled：無効化 -->
+        </p>
+        <p>
+            <button type="submit"><strong style="background-color:greenyellow;">送信ボタンに装飾する場合！</strong></button>
+        </p>
+        <p>
+            <input type="hidden" name="user_id" value="abcde">hidden
+        </p>
+
+
+        <fieldset>
+            <legend>【fieldset　　legend(checkbox)】  お使いのスマホ（複数選択可）</legend>
+            <input type="checkbox" id="android" checked> <label for="android">Android</label>
+            <input type="checkbox" id="iphone"> <label for="iphone">iPhone</label>
+            <input type="checkbox" id="other"> <label for="other">その他</label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>【fieldset　　legend(radiobutton)】  一番好きなスポーツ</legend>
+            <input type="radio" name="sports" id="baseball" checked> <label for="android">野球</label>
+            <input type="radio" name="sports" id="footbool"> <label for="iphone">サッカー</label>
+            <input type="radio" name="sports" id="other2"> <label for="other">その他</label>
+        </fieldset>
+
+    </form>
+</article>
+
+
+<!--
+=====================================================
+               disabled / readonly
+=====================================================
+-->
+<h2 class="my-h-02">disabled / readonly</h2>
+
+<div>
+    &lt;input name="a" type="text" value="hoge" disabled="disabled" /><br>
+    <input name="a" type="text" value="hoge" disabled="disabled" /><br>
+    &lt;input name="a" type="text" value="hoge" disabled /><br>
+    <input name="a" type="text" value="hoge" disabled />
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <div>
+    &lt;input name="b" type="text" value="hoge" readonly="readonly" /><br>
+    <input name="b" type="text" value="hoge" readonly="readonly" /><br>
+    &lt;input name="b" type="text" value="hoge" readonly /><br>
+    <input name="b" type="text" value="hoge" readonly />
+</div>
+
 
 </body>
 </html>
