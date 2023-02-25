@@ -25,4 +25,15 @@ https://favicon-generator.mintsu-dev.com/
 https://favicon.io/
 
 
+____________________________________________________________________
+# アイコン作成
+
+## 紹介
+https://www.shirokumamelon.com/entry/2017/11/12/212200
+
+## CHARAT YOCO
+https://charat.me/profile/create/
+
+## CHARAT MAE
+https://charat.me/front/create/
 
